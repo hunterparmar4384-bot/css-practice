@@ -1,0 +1,240 @@
+.main{
+    width: 600px;
+    height: 700px;
+    background-color: #0C5776;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+.box1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.box2{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.box3{
+    width: 130px;
+    height: 130px;
+    background-color: #00ade2;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: #00ade2;
+    border-radius: 50%;
+    padding: 20px 20px 20px 20px;    
+}
+.iflow{
+    /* width: calc(100% - 40px); */
+    padding: 20px;
+    margin: 20px;
+    background-color: grey; 
+    display: flex;
+    justify-content: space-evenly;
+}
+.rflow{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    }
+.rflow_sub{
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    left: 250px;
+}
+.rflow:hover .rflow_sub{
+    left: 50%;
+}
+.lflow{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.lflow_sub{
+    width: 100%;
+    height: 100%;
+    background-color: #00ade2;
+    transition: 4s;
+    position: absolute;
+    top: 0;
+    right: 250px;
+}
+.lflow:hover .lflow_sub{
+    right: 50%;
+}
+.tflow{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.tflow_sub{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 250px;
+    transition: 6s;
+}
+.tflow:hover .tflow_sub{
+    bottom: 50%;
+}
+.bflow{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.bflow_sub{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    transition: 6s;
+    position: absolute;
+    top: 250px;
+}
+.bflow:hover .bflow_sub{
+    top: 50%;
+}
+.flowone{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.flowone_sub{
+    width: 100%;
+    height: 100%;
+    background-color: #00ade2;
+    transition: 5s;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+    .flowone_sub2{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    transition: 5s;
+    position: absolute;
+    top: 0px;
+    right: 250px;
+}
+.flowone:hover .flowone_sub{
+    left: 50%;
+}
+.flowone:hover .flowone_sub2{
+    right: 50%;
+}
+.flowtwo{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.flowtwo_sub{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    right: 250px;
+}
+.flowtwo_sub2{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    left: 250px;
+}
+.flowtwo:hover .flowtwo_sub{
+    right: 50%;
+}
+.flowtwo:hover .flowtwo_sub2{
+    left: 50%;
+}
+.flowthree{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.flowthree_sub{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    transition: 4s;
+    position: absolute;
+    bottom: 250px;
+}
+.flowthree_sub2{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    transition: 4s;
+    position: absolute;
+    top: 250px;
+}
+.flowthree:hover .flowthree_sub{
+    bottom:50%;
+}
+.flowthree:hover .flowthree_sub2{
+    top: 50%;
+}
+.flowfour{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.flowfour_sub{
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    transition: 8s;
+    position: absolute;
+    bottom: 250px;
+}
+.flowfour_sub2{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+     transition: 8s;
+    position: absolute;
+    top: 250px;
+}
+.flowfour:hover .flowfour_sub{
+    bottom: 50%;
+}
+.flowfour:hover .flowfour_sub2{
+    top: 50%;
+}

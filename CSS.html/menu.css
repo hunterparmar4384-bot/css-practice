@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;}
+.main{
+    width: 100%;
+    height: 80px;
+    background: #EEAECA;
+background: radial-gradient( rgba(148, 187, 233, 1) 100%);;
+border-radius: 100px;}
+
+.main-sub{
+    width: 80%;
+    height: 80px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+    
+}
+.div1{
+    width: 20%;
+    height: 80px;
+    background-color: darkgray;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+}
+.div2{
+    width: 80%;
+    height: 80px;
+    background-color: #EEAECA;
+}
+ .main ul{
+   }
+ .main ul li {
+    list-style: none;
+    float: left;   
+ }
+ .main ul li :hover{
+    background-color: whitesmoke;
+    color: red;
+    text-decoration: none;
+ }
+ .main ul li a{
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    background-color: aqua;
+    border: 1px;
+    display: block;
+    line-height: 50px;
+    margin-right: 10px;
+    text-align: center;
+ }
+ 
+ .main ul li:hover .mega{
+    display: block;
+ }
+ .mega{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    display: none;
+ }
+ .main ul li:hover .mega2{
+    display: block;
+ }
+
+ .mega2{
+    width: 160px;
+    height: 100px;
+    border: 1px;
+    background-color: white;
+    display: none;
+    position: absolute;
+ }
+ .main ul li:hover .mega3{
+    display: block;
+ }
+ .mega3{
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+    display: none;
+    position: absolute;
+    left: 0;
+ }   

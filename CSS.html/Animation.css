@@ -1,0 +1,134 @@
+.one{
+    width: 100%;
+    height: 800px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: box 2s infinite alternate;
+}
+@keyframes box{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(400px);
+    }
+}
+.box2{
+    width: 250px;
+    height: 250px;
+    float: right;
+    background-color: yellow;
+    animation: box2 2s infinite alternate;
+}
+@keyframes box2{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translate(-400px);
+    }
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation: box3 2s infinite;
+    position: relative;
+    float: left;
+}
+@keyframes box3{
+    from{
+         transform: translate(0px);
+    }
+    to{
+         transform: translateY(400px);
+    }
+}.box4{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation: box4 2s infinite;
+    position: relative;
+    float: left;
+}
+@keyframes box4{
+    from{
+         transform: translate(0px);
+    }
+    to{
+         transform: translateY(-400px);
+    }
+}
+.box5{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    margin-top: px;
+    animation: box5 1s  0.8s infinite;
+    display: inline-block;
+}
+@keyframes box5{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+.box6{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    float: right;
+    animation: box6 1s infinite;
+}
+@keyframes box6{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+.box7{
+    width: 110px;
+    height: 110px;
+    background-color: crimson;
+    animation: box7 4s infinite;
+}
+@keyframes box7{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+         transform: translate(100px,0);
+    }
+    50%{
+        transform: translate(100px,120px);
+    }
+    75%{
+        transform: translate(0,120px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.box8{
+    width: 250px;
+    height: 250px;
+    background-color: grey;
+    animation: box8 0.2s  infinite;
+    float: right;
+    margin-right: 300px;
+}
+@keyframes box8{
+    0%{background-color: red;}
+    25%{background-color: yellow;}
+    50%{background-color: blue;}
+    75%{background-color: blueviolet;}
+    100%{background-color: green;}
+}

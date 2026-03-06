@@ -32,12 +32,28 @@
     margin-top: 20px;
 }
 .sub{
-    width: 25%;
+    width: calc(25% - 20px);
     height: auto;
+    margin: 10px;
     background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 1s;
+    animation: sub 2s infinite alternate;
+}
+@keyframes sub {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+    }
+.sub:hover{
+    color: brown;
+    background-color: peru;
+
 }
 h1{
     margin: 0;
@@ -45,7 +61,7 @@ h1{
 }
 p{
     margin: 0;
-    padding: 0;
+    padding: 30px;
     font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;

@@ -1,0 +1,24 @@
+header{
+    width: 1240px;
+    height: 75px;
+    background-color: yellow;
+}
+.top{
+    width: 1184px;
+    height: 58px;
+    margin: 15px 15px 0px;
+    padding: 0px 12px;
+    background-color: rgba(255,255,255,0.85);
+    border: 1px solid #eee;
+    border-radius: 50px;
+    height: 60px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.top_sub{
+    width: 156px;
+    height: 24px;
+    margin-left: 10px;
+    color: #023b6d;
+    text-decoration: none;
+    transition: 3s;
+}

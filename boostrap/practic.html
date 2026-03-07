@@ -9,13 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-<div class="alert alert-danger d-flex align-items-center" role="alert">
-  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
-    <use xlink:href="#exclamation-triangle-fill"></use>
-  </svg>
-  <div>
-       <i class="fa-solid fa-skull-crossbones font"></i>An example danger alert with an icon
-  </div>
-</div>
+  <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+  <button type="button" class="btn btn-primary">
+    Notification
+    <span class="badge bg-secondary">
+      4
+    </span>
+  </button>
+  <button type="button" class="btn btn-primary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+<button type="button" class="btn btn-primary position-relative">
+  Profile
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>
 </body>
 </html>

@@ -1,0 +1,22 @@
+.width{
+    width: 25%;
+}
+.wid{
+    width: 50%;
+}
+.p_size{
+    font-size: 22px;
+    font-weight: 600;
+}
+.color{
+    color: aqua !important;
+}
+.btn{
+    justify-content: space-between;
+}
+.w{
+    height: 400px;
+}
+.w2{
+    height: 400px;
+}

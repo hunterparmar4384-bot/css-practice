@@ -20,3 +20,13 @@
 .w2{
     height: 400px;
 }
+.text{
+    text-align: center;
+    color: brown;
+}
+.i_size{
+    height: 430px;
+}
+.mrg{
+    margin: 0;
+}

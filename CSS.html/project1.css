@@ -3,6 +3,7 @@ h1{
     font-weight: 700;
 }.font{
     font-size: 24px;
+    font-family: "Quicksand", sans-serif;
 }
 .color{
     color: #ffffff;
@@ -31,7 +32,7 @@ h1{
     background-color: #1B1933;
     padding: 5px 25px;
     border-radius: 50px;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +70,8 @@ h1{
         text-decoration: none;
         color: #c8c6e3;
         padding: 0px 2px;
-        transition: 0.3s;       
+        transition: 0.3s;  
+        font-family: ;     
 }
 a{
     position: relative;
@@ -357,5 +359,21 @@ h3{
     height: 100%;
 }
 .trd{
-    
+    width: 1265px;
+    height: 1192.36px;
+    padding: 60px 0px;
+     background-color: #05071e;
 }
+.trd_sub1{
+    width: 1116px;
+    height: 102.39px;
+    padding: 0px 12px 60px 12px;
+    margin: 0px 50px;
+    background-color: yellow;    
+}
+.trd_sub1_box1{
+    width: 1116px;
+    height: 38.39px;
+    background-color: aqua;
+}
+

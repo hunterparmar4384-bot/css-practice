@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{       int a=1;
+	clrscr();
+	printf("1 to 12 number\n");
+	printf("start....\n");
+	home:
+
+	printf("%d \n",a);
+	a= a+1;
+	if(a<=12)
+	{
+		goto home;
+	}
+
+	printf("end....\n");
+
+	getch();
+}

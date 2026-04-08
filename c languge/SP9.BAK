@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+	int num=15;
+	clrscr();
+	printf("End to start\n");
+	printf("End...\n");
+	home:
+	printf("%d\n",num);
+	num= num - 1;
+	if(num >= 3)
+	{
+		goto home;
+
+
+	}
+	printf("first...\n");
+
+	getch();
+}

@@ -1,0 +1,71 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+	int A = 30, B =45, C = 10, D = 5;
+	clrscr();
+
+	   if(A<B)
+	   {
+		if(A<C)
+		{
+			if(A<D)
+			{
+				printf("A is min");
+			}
+			else
+			{
+				printf("D is min");
+			}
+	       }
+	       else
+		{
+			if(C<D)
+			{
+				printf("c is min");
+			}
+			else
+			{
+				printf("d is min");
+			}
+
+
+		}
+
+
+	}
+	else
+
+	{
+		if(B<C)
+		{
+			if(B<D)
+			{
+				printf("B is min");
+			}
+			else
+			{
+				printf("D is min");
+			}
+		}
+		else
+
+			{
+				if(C<D)
+					{
+						printf("c is min");
+					}
+				else
+					{
+						printf("d is min");
+					}
+
+
+			}
+
+	}
+
+	getch();
+
+}

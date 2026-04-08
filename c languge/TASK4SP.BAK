@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int num,last;
+	clrscr();
+
+	printf("ENTER NUMBER:");
+	scanf("%d",&num);
+
+	last = num % 10;
+	printf("%d",last);
+
+
+
+	getch();
+
+}

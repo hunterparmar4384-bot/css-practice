@@ -1,0 +1,73 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int add,sub,multi,div,exit;
+	int A,B,choice;
+	clrscr();
+
+	start:
+
+	printf("\n1.add\n2.sub\n3.multi\n4.div\n5.exit\n");
+	printf("Enter choice:");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+	case 1:
+		printf("Enter A=");
+		scanf("%d",&A);
+		printf("Enter B=");
+		scanf("%d",&B);
+
+		add= A+B;
+		printf("add=%d\n",add);
+		break;
+
+	case 2:
+		printf("Enter A=");
+		scanf("%d",&A);
+		printf("Enter B=");
+		scanf("%d",&B);
+
+		sub= A-B;
+		printf("sub=%d\n",sub);
+		break;
+
+	case 3:
+		printf("Enter A=");
+		scanf("%d",&A);
+		printf("Enter B=");
+		scanf("%d",&B);
+
+		multi= A*B;
+		printf("sub=%d\n",multi);
+		break;
+
+	case 4:
+		printf("Enter A=");
+		scanf("%d",&A);
+		printf("Enter B=");
+		scanf("%d",&B);
+
+		div= A/B;
+		printf("sub=%d\n",div);
+		break;
+
+	case 5:
+	    goto end;
+	    break;
+
+	default:
+		printf("invalid");
+
+
+	}
+
+	goto start;
+
+	end:
+		printf("Thank you");
+
+      getch();
+}
+

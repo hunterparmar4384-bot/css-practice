@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int num,last,multi=1,add=0,a;
+
+	clrscr();
+	printf("Enter number:");
+	scanf("%d",&num);
+	a=num;
+
+	while(num > 0)
+	{
+		last = num % 10;
+		multi = multi * last;
+		add = add + last;
+		num = num / 10;
+
+	}
+	printf("multi=%d\t add= %d\n",multi,add);
+
+	if( multi == add)
+	{
+		printf("same & spy");
+	}
+	else
+	{
+		printf("not spy");
+	}
+
+	getch();
+
+}

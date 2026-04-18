@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int num=1,a,count;
+	clrscr();
+	while(num <= 1000)
+	{
+		a = 1;
+		count =0;
+		while( a <= num)
+		{
+			if(num % a == 0)
+			{
+				count++;
+			}
+			a++;
+
+		}
+
+
+		if(count == 2)
+		{
+			printf("%d\t",num);
+		}
+		num++;
+
+	}
+
+	getch();
+}

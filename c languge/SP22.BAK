@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int num,last,squre, sum=0,a;
+	clrscr();
+
+	printf("Enter number:");
+	scanf("%d",&num);
+	squre = num * num;
+	a = squre;
+	while(squre > 0)
+	{
+
+		last = squre % 10;
+		sum = sum + last;
+		squre = squre / 10;
+
+
+	}
+	printf("squre=%d\t sum=%d\n",a,sum);
+
+	if(sum == num)
+	{
+		printf("neon value");
+	}
+	else
+	{
+		printf("not neon value");
+	}
+
+	getch();
+
+}

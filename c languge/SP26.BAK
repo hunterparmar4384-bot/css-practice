@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int num;
+	clrscr();
+
+
+	do
+	{
+		printf("Enter number:");
+		scanf("%d",&num);
+
+
+	}while(num < 100 || num > 200);
+	printf("Than you");
+
+
+	getch();
+
+}
+

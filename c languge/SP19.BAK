@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a=1, num,total=1;
+	clrscr();
+
+	printf("Enter number:");
+	scanf("%d",&num);
+	while(a<=num)
+	{
+
+		total = total * a;
+		a++;
+
+	}
+	printf("factoreal i=%d",total);
+
+
+
+	getch();
+
+}

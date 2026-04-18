@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int num,last,cube=0,a;
+	clrscr();
+	printf("Enter number:");
+	scanf("%d",&num);
+	a=num;
+	while(num>0)
+	{
+		last = num % 10;
+		cube = cube + last * last * last;
+		num = num / 10;
+
+
+	}
+	printf("cube=%d\n",cube);
+
+	if(cube == a)
+	{
+		printf("same");
+	}
+	else
+	{
+		printf("not same");
+	}
+
+	getch();
+
+
+}

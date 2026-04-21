@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,n;
+	clrscr();
+	printf("Enter number:");
+	scanf("%d",&n);
+
+	for(a=1 ; n >= a ; n--)
+	{
+		printf("%d\n",n);
+	}
+
+	getch();
+}

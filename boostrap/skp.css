@@ -1,0 +1,26 @@
+.col{
+    background-color: #003366 !important;
+    color: #fff;    
+}
+.flex{
+    display: flex;
+    gap: 20px;   
+    align-items: center; 
+    
+}
+.brd{
+    border: #fff;
+    /* color: #fff; */
+}
+.mr{
+    margin-left: 100px;
+}
+.pad{
+    padding: 10px;
+}
+.size{
+    font-size: large;
+}
+
+
+

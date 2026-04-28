@@ -21,6 +21,18 @@
 .size{
     font-size: large;
 }
+.col2{
+    color: #292b2c !important;
+    font-weight: 600;
+}
+.col2:hover{
+    color: #ffbc00 !important;
+    transition: 0.5s;
+}
+.dropdown-item:hover{
+    color: pink;
+    
+}
 
 
 

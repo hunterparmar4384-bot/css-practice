@@ -29,9 +29,9 @@
     color: #ffbc00 !important;
     transition: 0.5s;
 }
-.dropdown-item:hover{
-    color: pink;
-    
+.hov:hover{
+    color: #ffbc00 !important;
+    transition: 0.5s;
 }
 
 

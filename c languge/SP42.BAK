@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[]={10,20,30,40,50};
+	int i,total=0;
+
+	clrscr();
+
+
+	for(i=0 ; i<5 ;i++)
+	{
+	       //	printf("%d\t",a[i]);
+
+	       printf("a[%d]=%d\n",i,a[i]);
+	       total = total + a[i];
+
+	}
+	printf("Total=%d",total);
+
+	getch();
+
+
+}

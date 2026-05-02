@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i;
+	char a[50];
+	clrscr();
+
+	printf("Enter string:");
+	scanf("%s",&a);
+      //	gets(a);
+
+
+       //	printf("%s",a);
+
+	for(i=0;a[i]!=NULL;i++)
+	{
+		printf("%c\n",a[i]);
+	}
+
+	getch();
+}

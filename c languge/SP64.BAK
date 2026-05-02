@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+struct demo
+	{
+		int a,b;
+	}h;
+
+void main()
+{
+	struct demo pp;
+	struct demo k[5];
+
+	clrscr();
+	h.a = 10;
+	h.b = 20;
+	printf("h.a =>%d\n",h.a);
+	printf("h.b =>%d\n\n",h.b);
+
+	pp.a = 100;
+	pp.b = 200;
+	printf("pp.a =>%d\n",pp.a);
+	printf("pp.b =>%d\n\n",pp.b);
+
+	k[0].a = 15;
+	k[1].b = 20;
+	printf("k[0].a => %d\n",k[0].a);
+	printf("k[1].b => %d\n",k[1].b);
+
+	getch();
+}
+

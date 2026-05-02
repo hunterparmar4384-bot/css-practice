@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char ch;
+
+	clrscr();
+	printf("Enetr char->");
+	scanf("%c",&ch);
+
+      //	printf("%c\n",ch);
+	printf("%d\n",ch);
+
+	if(ch >='A' && ch <= 'Z')
+	{
+		ch = ch + 32;
+		printf("%c",ch);
+	}
+	else if(ch >= 'a' && ch <= 'z')
+	{
+		ch = ch - 32;
+		printf("%c",ch);
+	}
+	else
+	{
+		printf("data is not found");
+		}
+       //	swip =  ch - 32;
+
+       //	printf("%c",swip);
+
+
+	getch();
+
+}

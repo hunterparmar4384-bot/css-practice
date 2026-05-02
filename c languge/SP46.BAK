@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+/*
+	enter size = 4
+	{10,20,30,40}
+	Enter add index : 2
+	Enter add value : 100
+	{10,20,100,30,40}
+*/
+void main()
+{
+	int a[5];
+	int i,size,skip;
+	clrscr ();
+	printf("Enter size:");
+	scanf("%d",&size);
+	for(i=0; i<size;i++)
+	{
+		printf("Enter a[%d]=",i);
+		scanf("%d",&a[i]);
+	}
+
+	printf("\nEnter Remove index:");
+	scanf("%d",&skip);
+
+	for(i=skip; i<size-1;i++)
+	{
+
+		a[i] = a[i+1];
+
+	}
+	size--;
+
+	for(i=0;i<size;i++)
+	{
+		printf("a[%d]=%d\n",i,a[i]);
+
+	}
+
+	getch();
+
+}
+
+
+
+

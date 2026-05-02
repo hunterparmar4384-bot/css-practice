@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[10];
+	int i,size,index,value;
+	clrscr();
+	printf("Enter size:");
+	scanf("%d",&size);
+
+	for(i=0; i<size; i++)
+	{
+		printf("a[%d]=",i);
+		scanf("%d",&a[i]);
+	}
+
+	printf("\nEnter index:");
+	scanf("%d",&index);
+	printf("Enter index value:");
+	scanf("%d",&value);
+
+	for(i=size-1; i>=index;i--)
+	{
+		a[i+1]=a[i];
+	}
+	a[index]=value;
+	size++;
+
+
+	for(i=0; i<size; i++)
+	{
+		printf("a[%d]=%d\n",i,a[i]);
+	}
+
+	getch();
+
+
+}

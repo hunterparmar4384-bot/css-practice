@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char s[50];
+	clrscr();
+
+	printf("Enter string:");
+	gets(s);
+
+		printf("strlen -> %d\n",strlen(s));
+		printf("strupr -> %s\n",strupr(s));
+	       //	printf("strlwr -> %s\n",strlwr(s));
+	       printf("strrev ->%s\n",strrev(s));
+	       printf("strcat ->%s\n",strcat(s,"@gmail.com"));
+	       printf("strcmp ->%d",strcmp(s,"cdmi"));
+
+	getch();
+
+}

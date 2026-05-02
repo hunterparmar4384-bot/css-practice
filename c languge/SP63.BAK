@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+	int i, length=0,upper=0,lower=0,digit=0,space=0, special=0,totalword=1;
+	char a[100];
+	clrscr();
+
+	printf("Enter:",a);
+	gets(a);
+
+       //	printf("%s",a);
+
+	for(i=0;a[i] !='\0';i++)
+	{
+		length++;
+
+		if(a[i]>='A' && a[i]<='Z')
+		{
+			upper++;
+		}
+		else if(a[i]>='a' && a[i]<='z')
+		{
+			lower++;
+		}
+		else if(a[i]>='1' && a[i]<='9')
+		{
+			digit ++;
+		}
+		else if(a[i]==' ')
+		{
+			space++;
+			totalword++;
+		}
+		else
+		{
+			special++;
+		}
+
+	}
+	printf("Totral length=>%d\n",length);
+	printf("Total upper case=>%d\n",upper);
+	printf("Total lower case=>%d\n",lower);
+	printf("Total Digit=>%d\n",digit);
+	printf("Total space=>%d\n",space);
+	printf("Total special char=>%d\n",special);
+	printf("Total word =>%d",totalword);
+
+
+	getch();
+
+}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[]={10,4,45,7,47,1};
+	int i,j,t;
+
+	clrscr();
+
+	for(i=0; i<6 ; i++)
+	{
+		for(j=i+1; j<6; j++)
+		{
+			if(a[j]<a[i])
+			{
+				t = a[i];
+				a[i] = a[j];
+				a[j] = t;
+
+			}
+		}
+	}
+
+	for(i=0; i<6; i++)
+	{
+		printf("a[%d]=%d\n",i,a[i]);
+
+	}
+
+	getch();
+
+}

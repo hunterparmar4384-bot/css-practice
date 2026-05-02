@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+	struct demo
+	{
+		int a,b;
+		int sum;
+	}h;
+
+	struct demo k[5];
+	clrscr();
+
+	printf("Enter =>");
+	scanf("%d",&k[0].a);
+	printf("k[0].a =>%d\n",k[0].a);
+
+	printf("Enter =>");
+	scanf("%d",&k[1].b);
+	printf("k[1].b =>%d\n",k[1].b);
+
+	getch();
+
+}

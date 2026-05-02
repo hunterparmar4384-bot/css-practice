@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	struct demo
+	{
+		int a,b;
+
+	}s;
+	struct demo ss;
+	struct demo p[5];
+	clrscr();
+
+	printf("Enter:");
+	scanf("%d",&s.a);
+	printf("Enter:");
+	scanf("%d",&s.b);
+
+	printf("s.a=>%d\n",s.a);
+	printf("s.b=>%d\n\n",s.b);
+
+	printf("Enter:");
+	scanf("%d",&ss.a);
+	printf("Enter:");
+	scanf("%d",&ss.b);
+
+	printf("ss.a=>%d\n",ss.a);
+	printf("ss.b=>%d\n\n",ss.b);
+
+	printf("Enter:");
+	scanf("%d",&p[0].a);
+	printf("Enter:");
+	scanf("%d",&p[0].b);
+
+	printf("p[0].a=>%d\n",p[0].a);
+	printf("p[1].a=>%d",p[0].b);
+
+
+	getch();
+
+}
+
+
+
+
+

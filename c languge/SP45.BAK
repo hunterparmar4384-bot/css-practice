@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[5];
+	int i,size;
+	clrscr();
+
+       printf("Enter size:");
+       scanf("%d",&size);
+
+       for(i=0;i<size;i++)
+       {
+
+		printf("Enter a[%d]=",i);
+		scanf("%d",&a[i]);
+       }
+       for(i=0;i<size;i++)
+       {
+		if(i == 2)
+		{
+			continue;
+
+		}
+
+		printf("a[%d]=%d\n",i,a[i]);
+       }
+
+
+
+	getch();
+
+}

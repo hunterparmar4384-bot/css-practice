@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+/*
+	[10,4,45,7,47,1]
+
+	=> low to high
+	=> [1,4,7,10,45,47]
+*/
+void main()
+{
+	int a[]={10,15,20,25,5,2};
+	int i,min=a[0];
+	clrscr();
+	for(i=0; i<=5; i++)
+	{
+		printf("a[%d]=%d\n",i,a[i]);
+
+		if(a[i] < min)
+		{
+			min = a[i];
+		}
+
+	}
+	printf("\nmin=%d",min);
+
+
+	getch();
+
+
+}

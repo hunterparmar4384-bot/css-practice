@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void test()
+{
+	int a= 10,b;
+	char ch = 'A';
+	printf("test function\n");
+	printf("a=%d\n",a);
+	printf("Enetr num;");
+	scanf("%d",&b);
+	printf("%d\n",b);
+
+}
+void main()
+{
+
+	clrscr();
+	test();
+	getch();
+
+
+}

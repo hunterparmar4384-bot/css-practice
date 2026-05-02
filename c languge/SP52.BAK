@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c;
+	clrscr();
+
+	for(a=1;a<=5;a++)
+	{
+		for(b=a;b<5;b++)
+		{
+			printf("");
+		}
+		for(c=5;c>=a;c--)
+		{
+			printf("* ");
+		}
+		printf("\n");
+	}
+
+
+
+
+
+
+	getch();
+
+}

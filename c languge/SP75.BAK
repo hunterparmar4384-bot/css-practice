@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a = 50;
+	int *ptr=&a;
+	clrscr();
+
+	a = 100;
+	*ptr = 1234;
+
+	printf("a = %d\n",a);
+	printf("address of a %p\n",ptr);
+	printf("value from address is %d\n",*ptr);
+
+	getch();
+
+}

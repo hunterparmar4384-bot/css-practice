@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a = 23, b = 32;
+	int *p1, *p2;
+
+	clrscr();
+
+	p1 = &a;
+	p2 = &b;
+
+
+	printf("a = %d\n",*p1);
+	printf("a = %d\n",*p2);
+
+	getch();
+
+}

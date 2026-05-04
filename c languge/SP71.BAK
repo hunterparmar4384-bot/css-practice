@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+enum symbol
+{
+	ADD,SUB,MULTI,DIV
+};
+void main()
+{
+	enum symbol s ;
+
+	printf("Enter case:");
+	scanf("%d",&s);
+
+
+      switch(s)
+      {
+	case ADD:
+	printf("add case");
+	break;
+
+	case SUB:
+	printf("sub case");
+	break;
+
+	case MULTI:
+	printf("multi case");
+	break;
+
+	case DIV:
+	printf("div case");
+	break;
+      }
+	getch();
+}

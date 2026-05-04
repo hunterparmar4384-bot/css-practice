@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int test()
+{       int a = 12;
+	int b = 22;
+	int total = a+b;
+	return total;
+}
+
+void main()
+{
+	int total;
+      //	int h=100, g=200;
+	clrscr();
+       //	total = test(h,g);
+	total = test();
+	printf("Total = %d",total);
+
+	getch();
+
+}

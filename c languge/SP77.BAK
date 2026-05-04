@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void cdmi(int a)
+{
+	printf("cdmi.....");
+	a++;
+
+	if(a<=5)
+	{
+		cdmi(a);
+	}
+	printf("\nend ==>%d",a);
+
+
+}
+void main()
+{
+	clrscr();
+	cdmi(1);
+	getch();
+}

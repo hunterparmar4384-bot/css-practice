@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+int demo(int a,int b)
+{
+
+	int total = a + b;
+	return total;
+
+
+
+}
+
+void main()
+{
+	int total;
+	int h=10, g=20;
+
+	clrscr();
+	total = demo(h,g);
+	printf("total = %d",total);
+	getch();
+}

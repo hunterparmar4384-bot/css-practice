@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int n = 1;
+	clrscr();
+
+	start:
+
+	cout<<n<<endl;
+	n=n+1;
+	if(n<=5)
+	{
+		goto start;
+	}
+
+
+
+	getch();
+}

@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int num,last;
+	clrscr();
+
+	cout <<"Enter number:";
+	cin >>num;
+
+	last = num % 10;
+	cout<<last;
+
+
+
+
+
+	getch();
+
+}

@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+		int a;
+		clrscr();
+		cout<<"enter number:";
+		cin>>a;
+		cout<<a<<endl;
+		cout <<a<<"a"<<endl;
+		cout<< a <<"value"<<endl;
+
+		getch();
+
+
+}
+

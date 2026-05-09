@@ -1,6 +1,6 @@
 .top{
     height: 32px;
-    background-color: #023b6b !important;
+    background-color: #023b6b;
     color: #000000;
     display: flex;
     box-sizing: border-box;   
@@ -73,12 +73,21 @@
 .btn{
     
     background-color: #7bb100 !important;
-    color: #E5E6EA !important;    
+    color: #E5E6EA ;    
     height: 37px;
-    padding: 8px 30px !important;    
+    padding: 8px 30px;    
 }
 .btn:hover{
-    background-color: #7cb100a4 !important;
+    background-color: #7cb100a4;
 }
+.sec{
+    color: #E5E6EA;
+    background-color: #0E1022;
+    padding: 140px 0px 100px;
+}
+
+
+
+
 
 

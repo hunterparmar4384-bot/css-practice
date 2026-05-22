@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //                   1 to  5 number loop
+
+   /* let i = 1;
+
+    while(i<=5){
+        document.write(i)
+        document.write("<br>")
+        i++;
+    }*/
+
+        //                   1 to n number print
+    /* let a = 1;
+     let n = 25;
+
+     while(a<=n)
+     {
+        document.write(a);
+        document.write("<br>")
+        a++;
+     }   */
+
+
+    /* let i = 10;
+     while(i>=1)
+     {
+        document.write(i);
+        document.write("<br>");
+        i--;
+     }   */
+
+     //                    sum of numbers
+
+     /* let num = 123456;
+     let sum = 0;
+
+     document.write(num)
+     while(num>0){
+        rem = num % 10;
+        sum = sum + rem;
+        num = parseInt(num/10);
+     }
+
+     document.write("<br>",sum)  */
+//                    number reverse
+
+
+/*     let num = 123;
+     let rev = 0;
+
+     document.write(num);
+
+     while(num>0){
+        last = num % 10;
+        rev = rev * 10 + last;
+        num = parseInt(num/10)
+
+    }
+    document.write("<br>",rev)   */
+
+
+    //      palimdrome number
+
+
+/*    let num = 121;
+    let rev = 0;
+    let t = num;
+
+
+    document.write("Number:",num);
+    while(num>0){
+        last = num % 10;
+        rev = rev * 10 + last;
+        num = parseInt(num/10);
+    }
+
+    document.write("<br>Revers:",rev)
+
+    if(t == rev)
+    {
+        document.write("<br>same")
+    }   
+    else
+    {
+        document.write("<br>not same")
+    }   */
+
+    //               Amstrong number
+ /*   let num = 153;
+    let cube = 0;
+    let t = num;
+    
+    document.write("Number:",num)
+
+    while(num>0)
+    {
+        last = num % 10;
+        cube = cube + last * last * last;
+        num = parseInt(num/10);
+    }
+
+    document.write("<br>CUBE:",cube)
+
+    if(cube == t){
+        document.write("<br>same")
+    }
+    else
+    {
+        document.write("<br>not same")
+    }    */
+
+    //                       factoreal i--
+
+/* let num = 5;
+ let fact = 1;
+
+ while(num>0)
+ {
+    fact = fact * num;
+    num--;
+ }
+ document.write(fact)    */
+
+//                         fibonacci series
+
+/*
+ let a = 0;
+ let b = 1;
+ let count = 8;
+
+ while(count > 0)
+ {
+    document.write(a+"<br>")
+
+    let temp = a + b;
+    a = b;
+    b = temp;
+
+    count--;
+ }       */
+
+
+//             spy
+
+
+
+
+/* let num = 22;
+ let multi = 1;
+ let add = 0;
+ let = t = num;
+
+ document.write("NUM:",num)
+
+ while(num>0)
+ {
+    last = num % 10;
+    multi = multi * last;
+    add = add + last;
+    num = parseInt(num/10); 
+
+ }
+ document.write("<br>")
+ document.write("ADD:",add)
+ document.write("<br>multi:",multi)
+
+ if (multi == add)
+ {
+    document.write("<br>spy")
+ }
+ else
+ {
+    document.write("<br>not spy")
+ }  */
+
+//                              neon number
+/* let num = 9
+ let squre = num * num; 
+ let sum = 0;
+
+document.write("NUM=>",num)
+document.write("<br>squre:",squre)
+
+ while(squre>0)
+ {
+    last = squre % 10;
+    sum = sum + last;
+    squre = parseInt(squre/10)
+ }
+
+document.write("<br>SUM=>",sum)
+
+if(num==sum)
+{
+    document.write("<br>neon number")
+}
+else
+{
+    document.write("<br>not neon number")
+}  */
+
+//                                      1 to 100 odd number print
+/*let num = 1;
+while(num<100)
+{
+    document.write("<br>",num);
+    num+=2;
+}*/
+  
+
+let num = 4;
+let prime = true;
+
+if(num<=1){
+    prime = false;
+}
+else{
+
+    let i = 2;
+
+    while(i<num){
+        if(num % i ==0)
+        {
+            prime = false;
+            break;
+        }
+        i++;
+    }
+
+}
+if (prime == true){
+    document.write(num+"prime number")
+}
+else
+{
+    document.write(num+"not prime number")
+}
+    </script>
+</body>
+</html>

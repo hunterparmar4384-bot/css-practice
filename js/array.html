@@ -71,33 +71,183 @@
       
       //    delete enter num
 
-      let a = [10,20,30,40,50]
-      let skip = 10;
+     /* let a = [10,20,30,40,50]
+      let skip = 40;
 
       let pos = a.indexOf(skip)
-      document.write("before del:<br>",)
 
-      for(let i = 0; i<a.length; i++)
+      document.write("before del:<br>")
+
+      for(let  i= 0; i<a.length; i++)
       {
         document.write("a[",i,"]:",a[i],"<br>")
       }
 
-      for(let  i = pos; i<a.length -1; i++)
+      for(let i = pos; i<a.length; i++)
       {
-        a[i] = a[i+1];
+        a[i] = a[i +1];
       }
-      a.length--;
+      a.length --;
 
-      document.write("<br>After del:<br>")
+      document.write("<br> After del:<br>")
 
-      for(let  i=0; i<a.length; i++ )
+      for(let  i =0;i<a.length;i++)
       {
-        document.write("a[",i,"]",a[i],"<br>")
+        document.write("a[",i,"]:",a[i],"<br>")
+      }*/
+
+      //      task 1. print program
+
+     /* let name = ["one","two","third","four","five"]
+      for(let i = 0; i<name.length; i++)
+      {
+        document.write(name[i],"<br>")
+      }*/
+
+      //  sum of numbers
+
+     /* let  a = [25,25,25,25,25]
+      let sum = 0;
+
+      for(let i = 0;i<a.length;i++)
+      {
+        document.write("a[",i,"]:",a[i],"<br>")
+
+        sum = sum + a[i];
       }
+      document.write("sum==>",sum)*/ 
 
-      
+     //   min num
+     
+     /*let a = [1,2,54,85,9];
+     let min = a[0];
+
+     for(let i = 0; i<a.length; i++)
+     {
+        document.write("a[",i,"]:",a[i],"<br>")
+        if (a[i]<min)
+        {
+            min = a[i];
+        }
+       
+     }
+     document.write("min==>",min)*/
+
+     //      max num
+    /*let a = [145,174,184,259,262,312,135,]
+     let max = a[0]
+
+     for(let i = 0; i<a.length; i++)
+     {
+        document.write("a[",i,"]:",a[i],"<br>")
+
+        if(a[i]>max)
+        {
+            max = a[i];
+        }
+     }
+     document.write("max==>",max)*/
+
+     //   even odd number
+
+     /*let a = [12,24,36,48,65,17]
+
+     for(let i = 0;i<a.length; i++)
+     {
+
+           
+
+        if(a[i] % 2 ==1)
+        {
+            document.write("a[",i,"]:",a[i],"<br>")
+
+        }
+        
+             }
+*/
+
+//                 delet number
+
+/*let a = [10,20,30,40,50]
+let skip = 30;
+
+let pos = a.indexOf(skip)
+
+document.write("Before del:<br>")
+
+for(let i = 0; i<a.length; i++)
+{
+    document.write("a[",i,"]",a[i],"<br>")
+}
+
+for(let i = pos; i<a.length; i++)
+{
+    a[i] = a[i + 1];
+}
+a.length --;
+
+document.write("After del:<br>")
+
+for(let i = 0; i<a.length-1; i++)
+{
+    document.write("a[",i,"]:",a[i],"<br>")
+}*/
+
+ /*let b = [[10,20,30,], [40,50,60], [70,80,90]]
+
+  for(let i = 0; i<b.length; i++)
+ {
+    for(let j = 0;j<b.length; j++)
+    {
+        document.write("<br>a[",i,"][",j,"]=",b[i][j])
+    }
+    document.write("<br>")
+ }*/
+
+ let arr = [
+    [10,20,30],
+    [40,50,60],
+    [70,80,90]
+];
+
+for(let i = 0; i<arr.length; i++)
+{
+    for(let j = 0;j<arr[i].length; j++)
+    {
+        document.write(arr[i][j],"&nbsp;&nbsp;")
+    }
+    document.write("<br>")
+}
+
+/*let arr = [[1,2],[3,4],[5,6]];
+
+for(let i = 0; i<arr.length; i++)
+{
+    document.write("ROW ", i , ": ")
+
+for(let j = 0; j<arr[i].length; j++)
+{
+    document.write(arr[i][j],"&nbsp;");
+}
+document.write("<br>")
+}*/
 
 
-    </script>
+/*let std = [
+["Raj",90],
+["jay",80],
+["meet",70]
+];
+
+for(let i = 0; i< std.length;i++)
+{
+    document.write(std[i][0], " : ");
+    document.write(std[i][1]);
+    document.write("<br>")
+}*/
+
+
+
+</script>
 </body>
-</html>
+    </html>

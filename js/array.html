@@ -68,6 +68,36 @@
       {
         document.write("<br>a[",i,"]",a[i])
       }*/
+      
+      //    delete enter num
+
+      let a = [10,20,30,40,50]
+      let skip = 10;
+
+      let pos = a.indexOf(skip)
+      document.write("before del:<br>",)
+
+      for(let i = 0; i<a.length; i++)
+      {
+        document.write("a[",i,"]:",a[i],"<br>")
+      }
+
+      for(let  i = pos; i<a.length -1; i++)
+      {
+        a[i] = a[i+1];
+      }
+      a.length--;
+
+      document.write("<br>After del:<br>")
+
+      for(let  i=0; i<a.length; i++ )
+      {
+        document.write("a[",i,"]",a[i],"<br>")
+      }
+
+      
+
+
     </script>
 </body>
 </html>

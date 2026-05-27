@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*let add = () =>{
+            let a = 20, b = 25, min;
+
+            document.write("A:",a,"<br>")
+            document.write("B:",b,"<br>")
+
+            if(a<b)
+            {
+                min = a;
+                document.write("a is min")
+            }
+            else
+            {
+                document.write("b is min")
+            }           
+
+        }
+        add();*/  
+
+       /* let myfun = () =>{
+            document.write("hello and wel come to cdmi")
+        }       
+        myfun();  */
+        /* let myfun = (a,b) => {
+            let add;
+            add = a + b;
+            document.write("A:",a,"<br>")
+            document.write("B:",b,"<br>")
+            document.write("add=>",add)
+        }            
+        myfun(10,10)   */
+
+       let myfun = (a,b) =>{
+            let add;
+            add = a + b;
+            return{a,b,add}
+        }
+        let t = myfun(25,25)
+        document.write("A:",t.a,"<br>")
+        document.write("B:",t.b,"<br>")
+        document.write("sum=>",t.add)
+
+       
+        
+        </script>    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+         /*(() =>{
+
+        document.write("hello<br>")
+    })();
+    
+
+      ((name) =>{
+
+            document.write("hello &nbsp;",name)
+        
+    })("hunter")
+    */
+
+    /* ((a ,b)=>{
+     
+         let sum = a + b;
+         document.write("sum=>",sum)
+     
+     })(10,20);   */
+
+   /*  ((name) =>{
+        document.write("hello my name is &nbsp;",name)
+
+     })("hunter");*/
+
+   /* let ans = ((a,b)=>{
+
+        return 10 + 20;
+
+     })();
+     document.write("Answer=>",ans)/*
+
+     /*let result =( (a,b)=>{
+        let add = a + b;
+        return {a,b,add};
+     })(10,20);
+     document.write("A=>",result.a,"<br>")
+     document.write("B=>",result.b,"<br>")
+     document.write("sum=>",result.add)*/
+
+     let result = ((a,b)=>{
+
+        let add = a + b;
+        return{a,b,add}
+     })
+     let t = result(10,20);
+     document.write("A:",t.a,"<br>")
+     document.write("B:",t.b,"<br>")
+     document.write("add=>",t.add)
+
+       </script>
+
+</body>
+</html>

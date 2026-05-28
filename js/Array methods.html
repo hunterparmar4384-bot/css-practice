@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //   push()=>  last value add
+
+      /* let arr = [10,20,30];
+       arr.push(40);
+
+       document.write(arr)*/
+
+       //            pop()  => last value remove
+
+       /*let arr = [10,20,30,40,50]
+       arr.pop()
+       document.write(arr);  */
+
+     //               unshift()   => start ma value add kare
+
+     /*let arr = [20,30];
+     arr.unshift(10);
+     document.write(arr); */
+
+     //         shift()   => start ma value remove kare
+
+     /*let arr = [10,20,30,40,50]
+     arr.shift();
+
+     document.write(arr)   */
+
+     /*let arr = [10,20,30,40,50]
+     document.write(arr.includes(40))*/
+
+     
+    /* let arr = [10,20,30,40,50,60,70,80,92]
+     document.write(arr.indexOf(92))*/
+
+
+
+     //        reverse =>array revers thay
+
+     /*let arr = [10,20,30,40,50];
+     arr.reverse();
+     document.write(arr)       */
+
+
+   //           sort
+/*   let arr = [1,4,5,2,3]
+   arr.sort();
+
+
+   document.write(arr) */
+
+
+  /* let arr = [10,20,30,40,50]
+   let ans = arr.slice(2,5)
+   document.write(ans)  */
+
+  //                 splice
+  /* let arr = [10,20,30,40,50]
+   arr.splice(1,2)
+   document.write(arr)
+
+   document.write("<br><br>")
+
+        
+   let demo = [10,20,30]
+   demo.splice(3,0,40)
+   document.write(demo)*/
+
+//                   join => aaray ne string ma convert kare
+
+/*   let arr = [10,20,30,40]
+   document.write(arr.join(" - "));*/
+
+   //          tostring => Array ne string banave
+
+
+  /* let arr = [10,20,30,40,50];
+   document.write(arr.toString());   */
+
+  /* let arr = [10,20,30,40]
+
+   arr.forEach((value) => {
+    document.write(value,"<br>")
+   }); */
+
+   //        copywithin
+
+ /*  let arr = [10,20,30,40,50,60]
+   arr.copyWithin(0,3);
+   document.write(arr) */
+
+
+
+//      every()
+       
+/*let arr = [10,20,30,40,50]
+let ans = arr.every((value) =>{
+
+    return value > 5;
+})
+document.write(ans) */
+
+/* let even = [2,4,6,8,10]
+let ans = even.every((num) =>{
+
+       return num % 2 == 0
+    
+});
+document.write(ans) */
+
+//           fill
+
+
+/*let arr = [10,20,30,40]
+arr.fill(0)
+document.write(arr)  
+
+let demo = [10,20,30,40,50,60,70,80]
+demo.fill(100,2,7)
+document.write(demo)  */
+
+
+//              filter
+/*let arr = [1,2,3,4,5,6,7,8]
+let ans = arr.filter((value) =>{ 
+
+    return value % 2 == 0
+})
+document.write(ans)*/
+
+//              find
+
+/* let arr = [1,2,3,4,5,6,7,8,9,10,11,12]
+let even = arr.find((value)=>{
+
+    return value % 2 == 0
+
+})
+document.write(even) */
+
+
+//              findindex
+
+/*let arr = [10,20,30,40,50,60,70,80,90]
+let ans = arr.findIndex((value) =>{
+
+    return value > 20
+
+})
+document.write(ans)*/
+
+//                    flat
+
+/*let arr = [1,2,[3,[4,5]]];
+let ans = arr.flat();
+
+document.write(ans)  */
+
+
+//                         map
+
+/*let arr = [1,2,3,4,5,6]
+let ans = arr.map((value) =>{
+
+    return value * 2;
+    
+})
+document.write(ans)*/
+
+
+//        flatmap
+/*let arr = [1,2,3,];
+let ans = arr.flatMap((value) =>{
+    return [value, value * 2];
+})
+
+document.write(ans)*/
+
+
+//                        reduce  ==> all element ne single value ma store kare
+
+/*let arr = [10,20,30,40]
+let ans = arr.reduce((acc,value)=>{
+
+    return acc + value
+})
+document.write(ans)
+
+
+document.write("<br><br>")
+
+let demo = [10,20,30,40]
+let  rr = demo.reduceRight((acc,value)=>{
+
+    return acc + value;
+});
+document.write(rr)*/
+
+
+//            some  => koi ek condition pan match thay to true and program stop
+
+let arr = [1,2,3,4,5,6]
+let even = arr.some((num) =>{
+
+    return num % 2 == 0
+
+})
+document.write(even)
+
+
+
+    </script>
+</body>
+</html>

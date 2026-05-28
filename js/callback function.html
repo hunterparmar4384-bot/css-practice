@@ -33,7 +33,7 @@
           }
           myfunction(callback)*/
 
-          function work(message)
+         /* function work(message)
           {
             document.write("WORK COMPLETED")
             message()
@@ -42,8 +42,35 @@
           {
             document.write("<br>MESSAGE SEND SUCCEFULY")
           }
-          work(message)
+          work(message)  */
 
+          /*function first(callback)
+          {
+            document.write("hello<br>")
+           callback()
+          }
+          function second()
+          {
+            document.write("and well come to cdmi")
+          }
+          first(second) */
+
+          
+          function sum(down)
+          {
+            let a = 10, b = 20;
+            let sum = a + b;
+
+            document.write("A:",a,"<br>")
+            document.write("B:",b,"<br>")
+            document.write("SUM=>",sum,"<br>")
+            down()
+          }
+          function down(){
+            document.write("sum completed")
+          }
+          sum(down)
+          
          
         
         

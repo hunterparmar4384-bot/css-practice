@@ -47,10 +47,19 @@
         let t = myfun(25,25)
         document.write("A:",t.a,"<br>")
         document.write("B:",t.b,"<br>")
-        document.write("sum=>",t.add)
+        document.write("sum=>",t.add) 
 
-       
-        
+        document.write("<br><br>")
+
+        let demo = (num) =>{
+            let  square;
+            square = num * num;
+            return {square,num}
+        }       
+        let p = demo(5)        
+
+        document.write("num:",p.num,"<br>")
+        document.write("square:",p.square)
         </script>    
 </body>
 </html>

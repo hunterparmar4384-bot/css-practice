@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+        //                               forEach method
+
+      /*  let arr = [{name : "demo", age : 23},{name: "cdmi", age :45}]
+
+        //  document.write(arr[0].name,"<br>")
+        //  document.write(arr[0].age,"<br>")
+        //  document.write(arr[1].name,"<br>")
+        //  document.write(arr[1].age)
+
+        arr.forEach((value,index) =>{
+            
+            document.write(value.name)
+            document.write("<br>",value.age)
+            document.write("<br><br>")
+
+        }) */
+
+      /*  let demo = [100,200,300,400]
+        
+        demo.forEach((value,index,demo)=>{
+
+            document.write("value=>",value,"<br>")
+            document.write("index=>",index,"<br>")
+            document.write("demo=>",demo,"<br>")
+        })*/
+
+       /* let arr = [10,20,30,40,50]
+        
+        arr.forEach((value)=>{
+            document.write(value,"<br>")
+            
+        })    */
+
+
+        //                          MAP METHOD
+
+       /* let arr = [{name:"demo", age : 23},{name:"cdmi", age : 45}]
+        arr.map((value,index)=>{
+            document.write(index,"<br>")
+            document.write(value.name,"<br>")
+            document.write(value.age,"<br><br>")
+        })
+  */ 
+
+ /* let arr = [10,20,30,40]
+  let sum = 0;
+
+  arr.map((value)=>{
+
+    sum = sum + value;
+
+  })
+  document.write(sum)
+*/
+
+
+
+//                          DESTRUCTURING 
+
+/*let b = {name:"demo",phone:8974563210, age : 23, email:"demo@gmail.com"}
+
+
+let {name, phone , age, email} = b
+
+document.write(name,"<br>")
+document.write(phone,"<br>")
+document.write(age,"<br>")
+document.write(email)*/
+
+
+let student = {
+    name : "shakti",
+    cls: "12th(B)",
+    rollnum: 21,
+    mo:1234567890
+}
+
+let {name,cls,rollnum,mo} = student
+
+document.write("name:",name)
+document.write("<br>cls:",cls)
+document.write("<br>rollnum:",rollnum)
+document.write("<br>mo:",mo)
+
+</script>    
+</body>
+</html>

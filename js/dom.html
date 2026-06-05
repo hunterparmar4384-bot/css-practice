@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .col{
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        function myfunction()
+        {
+            let i = document.getElementById('cdmi')
+            i.innerText='change by function'
+            i.style.color='red'
+            i.style.fontSize='50px'
+        }
+    </script>
+    
 </head>
 <body>
+                                <h2 style="text-align: center;">TAG name</h2> 
+
+ <h1>hello</h1>
+<h1>hello</h1>
+<h1>hello</h1>
+<h1>hello</h1>
+<h1>hello</h1>
+<button onclick="document.getElementsByTagName('h1')[1].innerText='wel come to javascipt'">good afternoon</button>
+<button onclick="document.getElementsByTagName('h1')[1].innerHTML='<i>wel come to javascipt</i>'">java</button>
+
+
+<hr>
+<hr>    
+                            <h1 style="text-align: center;">class name</h1> 
+
+ <h2 class="demo">hello</h2>                           
+ <h2 class="demo">hello</h2>                           
+ <h2 class="demo">hello</h2>                           
+ <h2 class="demo">hello</h2>                           
+ <h2 class="demo">hello</h2>                           
+ 
+                            
+ <button class="col" onclick="document.getElementsByClassName('demo')[2].innerText='javascipt'">by class</button>
+ <button onclick="document.getElementsByClassName('demo')[2].innerHTML='<i>javascipt</i>'">click now</button>
+
+ <br>
+<hr>
+<hr>
+
+                                 <h1 style="text-align: center; color: red;">ID NAME</h1>
+<p id="cdmi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero et enim sed porro nesciunt. Porro in sit, tempore incidunt maiores voluptatum ipsam! Nostrum corporis iste tenetur et ratione eum velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, similique! Atque minus cupiditate cumque nesciunt nobis voluptate eaque modi? Minima excepturi sint delectus nostrum amet, possimus nam iste ullam rerum.</p>                                 
+
+<button onclick="document.getElementById('cdmi').innerHTML='<h1>lorem</h1>ipsum dolor sit amet consectetur, adipisicing elit. Libero et enim sed porro nesciunt. <mark> Porro </mark>in sit, tempore incidunt maiores voluptatum ipsam! Nostrum corporis iste tenetur et ratione eum velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, similique! Atque minus cupiditate cumque nesciunt nobis voluptate eaque modi? Minima excepturi sint delectus nostrum amet, possimus nam iste ullam rerum'">BY ID</button>
+
+<button onclick="myfunction()">multiple changes</button>
     
 </body>
 </html>

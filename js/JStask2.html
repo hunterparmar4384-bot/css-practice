@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css-practice/js/JStask2.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+     <div class="slider">
+        
+        <button class="close" onclick="myfunction2()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    
+        <br>
+    <button onclick="myfunction()">click to open</button>
+
+  
+   <script> 
+        function myfunction()
+        {
+            let i = document.getElementsByClassName('slider')[0]
+            i.style.width='300px'           
+            
+        }    
+        function myfunction2()
+        {
+            let j = document.getElementsByClassName('slider')[0]
+            j.style.width='0px'
+        }
+
+    </script>
+
+     
+     <hr>
+     <br>
+     <br>
+
+     <div class="slider2"></div>
+     <br>
+     <button onclick="demo()">click now</button>
+
+     <script>
+        function demo()
+        {
+            let i = document.getElementsByClassName('slider2')[0];
+
+            if(i.style.width == '300px')
+              {
+
+                    i.style.width = '0px'                  
+              }
+              else
+              {
+                i.style.width = '300px'
+              }
+        }
+     </script>
+
+
+    
+    
+</body>
+</html>

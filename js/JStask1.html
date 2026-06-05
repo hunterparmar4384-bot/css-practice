@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+
+           </style>
+
+           
+</head>
+<body>
+
+<div class="col"></div>  
+<button  onclick="myfunction()" >click now</button>
+
+<script>
+           /* function myfunction()
+            {
+                let i = document.getElementsByClassName('col')[0]
+                i.style.backgroundColor='red'             
+                               
+            }            
+            function myfun()
+            {
+                let j = document.getElementsByClassName('col')[0]
+                j.style.backgroundColor='white'
+            }
+            */
+
+             function myfunction()
+            {
+                let i = document.getElementsByClassName('col')[0] 
+                //i.style.backgroundColor='red'               
+                
+                if(i.style.backgroundColor == 'red')
+                   {
+                        i.style.backgroundColor = 'white'                                                                    
+                   }
+                   else
+                   {
+                        i.style.backgroundColor = 'red'
+                   }
+            }            
+
+           
+</script>
+ 
+            <!-- ondblclick="myfun()" -->
+</body>
+</html>

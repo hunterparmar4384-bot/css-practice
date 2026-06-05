@@ -1,0 +1,23 @@
+ .slider{
+    width: 0px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: aqua;
+  transform: translateX(-20px); 
+    transition: 3s;
+    position: relative;
+}
+.close{
+    position: absolute;
+    right: 0px;       
+} 
+
+.slider2{
+    width: 0px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    transition: 3s;
+}
+
+

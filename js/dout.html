@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .dom{
+            width: 200px;
+            height: 0px;
+            border: 2px solid black;
+            background: #000;
+            position: absolute;
+            transition: 2s;
+            top: 30px;   
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dom"></div>
+    <button onclick="mydemo()">click now</button>
+
+    <script>
+        function mydemo()
+        {
+        i = document.getElementsByClassName('dom')[0]
+        // i.style.height='100px'
+
+        if(i.style.height == '0px')
+        {
+            i.style.height = '100px'
+        }
+        else
+        {
+            i.style.height = '0px'
+        }
+        }
+    </script>
+</body>
+</html>

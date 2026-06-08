@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/js/JStask5.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2" onclick="boxmove();"></div>
+    </div>
+
+     <script>
+        //  function boxmove()
+        //  {
+        //      i = document.getElementsByClassName('box2')[0];
+        //      i.style.transform ='translateX(500px)';            
+        //  }      
+         
+         let step = 0;
+
+       
+         
+        function boxmove()
+        {
+             let  i = document.getElementsByClassName('box2')[0]
+
+            if(step == 0)
+
+             {
+                 i.style.left = '500px' 
+                 i.style.top = '0px'
+             }
+             else if(step == 1)
+             {
+                i.style.left = '500px'
+                i.style.top = '500px'
+             }
+             else if(step == 2)
+             {
+                i.style.left = '0px'
+                i.style.top = '500px'
+             }
+             else if(step == 3)
+             {
+                i.style.left = '0px'
+                i.style.top = '0px'
+             }
+
+             step++;
+              if(step>3)
+              {
+                step = 0;
+              }
+
+        }
+                  
+
+       
+    </script> 
+</body>
+</html>

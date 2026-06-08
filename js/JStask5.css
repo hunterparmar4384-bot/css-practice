@@ -1,0 +1,19 @@
+.box1{
+    width: 600px;
+    height: 600px;
+    background-color: aquamarine;
+    position: relative;
+}
+.box2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transition: 2s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+

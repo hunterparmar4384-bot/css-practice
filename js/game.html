@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/js/game.css">
+    <title>tic-tac-toe</title>
+</head>
+<body>
+    <h1>tic-tac-toe</h1>
+    <div class="board">
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+        <div class="cell" onclick="play(this)"></div>
+    </div>    
+
+    <h2 id="result"></h2>
+
+    <button onclick="resetGame()">Restart Game</button>
+    <script>
+
+        
+     let currentPlayer = "X";
+
+function play(btn){
+
+    if(btn.innerHTML != ""){
+        return;
+    }
+
+    btn.innerHTML = currentPlayer;
+
+    checkWinner();
+
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+}
+
+function checkWinner(){
+
+    let cells = document.querySelectorAll(".cell");
+
+    let winPatterns = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+    ];
+
+    for(let pattern of winPatterns){
+
+        let a = cells[pattern[0]].innerHTML;
+        let b = cells[pattern[1]].innerHTML;
+        let c = cells[pattern[2]].innerHTML;
+
+        if(a && a === b && b === c){
+            document.getElementById("result").innerHTML =
+            a + " Wins!";
+        }
+    }
+}
+
+function resetGame(){
+
+    let cells = document.querySelectorAll(".cell");
+
+    cells.forEach(cell=>{
+        cell.innerHTML = "";
+    });
+
+    document.getElementById("result").innerHTML = "";
+
+    currentPlayer = "X";
+}
+
+let gameOver = false;
+
+function play(btn){
+
+    if(gameOver || btn.innerHTML != ""){
+        return;
+    }
+
+    btn.innerHTML = currentPlayer;
+
+    checkWinner();
+
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+}
+
+function checkWinner(){
+
+    let cells = document.querySelectorAll(".cell");
+
+    let winPatterns = [
+        [0,1,2],[3,4,5],[6,7,8],
+        [0,3,6],[1,4,7],[2,5,8],
+        [0,4,8],[2,4,6]
+    ];
+
+    for(let pattern of winPatterns){
+
+        let a = cells[pattern[0]].innerHTML;
+        let b = cells[pattern[1]].innerHTML;
+        let c = cells[pattern[2]].innerHTML;
+
+        if(a && a === b && b === c){
+            document.getElementById("result").innerHTML = a + " Wins!";
+            gameOver = true;
+        }
+    }
+}
+
+function resetGame(){
+
+    let cells = document.querySelectorAll(".cell");
+
+    cells.forEach(cell=>{
+        cell.innerHTML = "";
+    });
+
+    document.getElementById("result").innerHTML = "";
+    currentPlayer = "X";
+    gameOver = false;
+}
+
+
+    </script>
+    
+
+
+</body>
+</html>

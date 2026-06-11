@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="/js/JStask7.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tic tac toe</h1>
+    <div class="board">
+        <div class="box" onclick="play(this,0)"></div>
+        <div class="box" onclick="play(this,1)"></div>
+        <div class="box" onclick="play(this,2)"></div>
+        <div class="box" onclick="play(this,3)"></div>
+        <div class="box" onclick="play(this,4)"></div>
+        <div class="box" onclick="play(this,5)"></div>
+        <div class="box" onclick="play(this,6)"></div>
+        <div class="box" onclick="play(this,7)"></div>
+        <div class="box" onclick="play(this,8)"></div>
+    </div>
+
+    <div id="result"></div>
+    <button class="btn" onclick="restargame()"><i class="fa-solid fa-repeat"></i></button>
+
+    <script>
+        let turn = "X";
+        let board = ["","","","","","","","","",];
+        let gameover = false;
+
+
+        function play(box,index){
+            
+            if(board[index] !== ""  || gameover){
+                return;
+              
+            }
+
+            box.innerHTML = turn;
+            board[index] = turn;
+
+            checkwinner();
+
+            if(!gameover){
+
+                turn = (turn == "X")?"O" : "X";
+            }
+        }
+
+        function checkwinner(){
+            let winpattern = [
+                [0,1,2],
+                [3,4,5],
+                [6,7,8],
+                [0,3,6],
+                [1,4,7],
+                [2,5,8],
+                [0,4,8],
+                [2,4,6]
+            ];
+
+            for(let pattern of winpattern){
+                let a = pattern[0];
+                let b = pattern[1];
+                let c = pattern[2];
+
+                if(
+                    board[a] !=="" &&
+                    board[a] === board[b] &&
+                    board[b] === board[c]
+                ){
+                    document.getElementById("result").innerHTML=
+                    board[a] + " winner! ";
+                    gameover = true;
+                    return;
+                }                
+            }
+
+            if(!board.includes("")){
+                document.getElementById("result").innerHTML=
+                "match draw!";
+                gameover = true;
+            }
+        }
+
+        function restargame(){
+            let boxes = document.querySelectorAll(".box");
+            boxes.forEach(function(box){
+                box.innerHTML= "";
+            });
+            board=["","","","","","","","",""];
+            turn = "X";
+            gameover = false;
+
+            document.getElementById("result").innerHTML="";
+        }
+    </script>
+     
+</body>
+</html>

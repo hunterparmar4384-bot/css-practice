@@ -7,136 +7,105 @@
     <title>tic-tac-toe</title>
 </head>
 <body>
-    <h1>tic-tac-toe</h1>
-    <div class="board">
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-        <div class="cell" onclick="play(this)"></div>
-    </div>    
+  <h1>tic tac toe</h1>
+  <div class="board">
+    <div class="box" onclick="play(this,0)"></div>
+    <div class="box" onclick="play(this,1)"></div>
+    <div class="box" onclick="play(this,2)"></div>
+    <div class="box" onclick="play(this,3)"></div>
+    <div class="box" onclick="play(this,4)"></div>
+    <div class="box" onclick="play(this,5)"></div>
+    <div class="box" onclick="play(this,6)"></div>
+    <div class="box" onclick="play(this,7)"></div>
+    <div class="box" onclick="play(this,8)"></div>
+  </div>
 
-    <h2 id="result"></h2>
+  <div id="result"></div>
+  <button onclick="restartgame()">Restart game</button>
 
-    <button onclick="resetGame()">Restart Game</button>
-    <script>
+  <script>
 
-        
-     let currentPlayer = "X";
-
-function play(btn){
-
-    if(btn.innerHTML != ""){
-        return;
-    }
-
-    btn.innerHTML = currentPlayer;
-
-    checkWinner();
-
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
-}
-
-function checkWinner(){
-
-    let cells = document.querySelectorAll(".cell");
-
-    let winPatterns = [
-        [0,1,2],
-        [3,4,5],
-        [6,7,8],
-        [0,3,6],
-        [1,4,7],
-        [2,5,8],
-        [0,4,8],
-        [2,4,6]
-    ];
-
-    for(let pattern of winPatterns){
-
-        let a = cells[pattern[0]].innerHTML;
-        let b = cells[pattern[1]].innerHTML;
-        let c = cells[pattern[2]].innerHTML;
-
-        if(a && a === b && b === c){
-            document.getElementById("result").innerHTML =
-            a + " Wins!";
-        }
-    }
-}
-
-function resetGame(){
-
-    let cells = document.querySelectorAll(".cell");
-
-    cells.forEach(cell=>{
-        cell.innerHTML = "";
-    });
-
-    document.getElementById("result").innerHTML = "";
-
-    currentPlayer = "X";
-}
-
-let gameOver = false;
-
-function play(btn){
-
-    if(gameOver || btn.innerHTML != ""){
-        return;
-    }
-
-    btn.innerHTML = currentPlayer;
-
-    checkWinner();
-
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
-}
-
-function checkWinner(){
-
-    let cells = document.querySelectorAll(".cell");
-
-    let winPatterns = [
-        [0,1,2],[3,4,5],[6,7,8],
-        [0,3,6],[1,4,7],[2,5,8],
-        [0,4,8],[2,4,6]
-    ];
-
-    for(let pattern of winPatterns){
-
-        let a = cells[pattern[0]].innerHTML;
-        let b = cells[pattern[1]].innerHTML;
-        let c = cells[pattern[2]].innerHTML;
-
-        if(a && a === b && b === c){
-            document.getElementById("result").innerHTML = a + " Wins!";
-            gameOver = true;
-        }
-    }
-}
-
-function resetGame(){
-
-    let cells = document.querySelectorAll(".cell");
-
-    cells.forEach(cell=>{
-        cell.innerHTML = "";
-    });
-
-    document.getElementById("result").innerHTML = "";
-    currentPlayer = "X";
-    gameOver = false;
-}
-
-
-    </script>
+    let turn = "X";
+   
+    let board = ["","","","","","","","",""];
+    //  console.log(board)
+    let gameover = false;
     
+    function play(box,index){
+
+        // console.log(box , index);
+        
+
+        if(board[index] !== ""  || gameover){
+            // console.log("======="); 
+            
+            return;
+        }
+        box.innerHTML = turn;
+        board[index] = turn;
+
+    //    console.log(board);   
 
 
+        checkwinner();
+        if(!gameover){       
+            
+            turn = (turn === "X")? "O" : "X";
+        }
+    }
+
+    function checkwinner(){
+        let winpattern = [
+            [0,1,2],
+            [3,4,5],
+            [6,7,8],
+            [0,3,6],
+            [1,4,7],
+            [2,5,8],
+            [0,4,8],
+            [2,4,6]
+        ];
+
+               
+        for(let pattern of winpattern){
+            let a = pattern[0];
+            let b = pattern[1];
+            let c = pattern[2];
+
+            
+
+            if (
+                board[a] !== "" &&
+                board[a] === board[b] &&
+                board[b] === board[c]
+            ){
+                document.getElementById("result").innerHTML=
+                board[a] + "wins!";
+                gameover = true;
+                return;
+            }
+        }
+
+        if(!board.includes("")){
+            document.getElementById("result").innerHTML=
+            "match draw!";
+            gameover = true;
+        }
+    }
+
+    function restartgame(){
+        let boxes = document.querySelectorAll(".box");
+        boxes.forEach(function(box){
+            box.innerHTML= "";
+        });
+
+        board = ["","","","","","","","","",];
+        turn = "X";
+        gameover = false;
+
+        document.getElementById("result").innerHTML= "";
+    }
+
+  </script>  
 </body>
 </html>

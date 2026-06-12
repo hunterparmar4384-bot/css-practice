@@ -26,15 +26,14 @@
 
     <script>
         let turn = "X";
-        let board = ["","","","","","","","","",];
+        let board = ["","","","","","","","",""];
         let gameover = false;
 
 
         function play(box,index){
             
             if(board[index] !== ""  || gameover){
-                return;
-              
+                return;              
             }
 
             box.innerHTML = turn;
@@ -95,7 +94,6 @@
 
             document.getElementById("result").innerHTML="";
         }
-    </script>
-     
+    </script>    
 </body>
 </html>

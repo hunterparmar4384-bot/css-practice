@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/js/JStask9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+</head>
+ 
+    <script>
+        let pic = ["https://www.cdmi.in/sliders/AI.jpg",
+            "https://www.cdmi.in/sliders/Ethical-Haking.webp",
+            "https://www.cdmi.in/sliders/NSDC1.jpg",
+            "https://www.cdmi.in/sliders/2.webp",
+            "https://www.cdmi.in/sliders/web-design-institute-gujarat-surat.webp",
+            "https://www.cdmi.in/sliders/5.webp",
+            "https://www.cdmi.in/sliders/graphic-design-institute-gujarat-surat.webp",
+            "https://www.cdmi.in/sliders/jtnlz6ehbdbbl2jfvrmm.webp",
+        ];
+
+        let step = 0;
+
+        function load(){
+            document.getElementsByClassName('slider')[0]
+            .style.backgroundImage=`url(${pic[0]})`
+        }
+        
+        function next (){
+        let slider = document.getElementsByClassName('slider');
+        step++;
+
+        if(step>7)
+        {
+            step = 0;            
+        }
+
+        for(let i = 0;i<pic.length;i++)
+        {
+            if(i == step)
+            {
+
+                slider[0].style.backgroundImage = `url(${pic[i]})`;                
+            }
+        }
+    }
+    function prev(){
+        let slider = document.getElementsByClassName('slider');
+        step--;
+        if(step<0)
+       {
+           step = pic.length - 1;           
+       }
+       for(let i = 0;i<pic.length;i++)
+       {
+           if(i == step)
+           {
+                slider[0].style.backgroundImage = `url(${pic[i]})`;
+           }
+       }
+
+
+    }
+
+      
+        
+    </script> 
+    <body onload="load()"> 
+            
+    <div class="slider">
+        <div class="lclick" onclick="prev()"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="rclick" onclick="next()"><i class="fa-solid fa-angle-right"></i></div>
+    </div>    
+    
+</body>
+</html>

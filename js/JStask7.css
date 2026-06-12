@@ -47,6 +47,7 @@ body{
 }
 .btn:hover{
      background: #504d4d;
+     transform: scale(1.2);
 }
 
 

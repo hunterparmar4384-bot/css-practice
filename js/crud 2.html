@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD2</title>
+</head>
+<body>
+
+    NAME = <input type="text" name="" id="name">
+    <P id="name-error" style="color: red;"></P>
+    <br>    
+    SURNAME = <input type="text" name="" id="surname">
+    <P id="surname-error" style="color: red;"></P>
+    <br>
+    <button onclick="createData()">submit</button>
+    <br><br>
+    <table border="2">
+        <tr>
+            <td>NAME</td>
+            <td>SURNAME</td>        
+            <td>DELETE</td>
+        </tr>
+
+        <tbody id="showdata"></tbody>
+
+    </table>
+
+    
+    <script>
+        alldata = []
+
+        function createData()
+        {
+            const name = document.getElementById('name').value
+            console.log(name)
+            const surname = document.getElementById('surname').value
+            console.log(surname)
+
+            const obj = {name,surname}
+            console.log(obj)
+
+            if(!name)
+            {
+                document.getElementById('name-error').innerText='please Enter your name'                
+            }
+            else
+            {
+                document.getElementById('name-error').innerText=''
+            }
+
+            if(!surname)
+            {
+                document.getElementById('surname-error').innerText='please Enter your surname'
+            }
+            else
+            {
+                document.getElementById('surname-error').innerText=''
+            }
+
+            if(name && surname)
+            {
+                alldata.push(obj)
+                showdata()
+                document.getElementById('name').value=''
+                document.getElementById('surname').value=''
+            }
+
+        }
+
+        function showdata()
+        {
+            console.log(alldata)
+            let print =''
+            alldata.map((i,index)=>{
+                print += `<tr><td>${i.name}</td><td>${i.surname}</td><td><button onclick ="deleteData(${index})">DELETE</button></td></tr>`
+            })
+            document.getElementById('showdata').innerHTML = print
+
+        }
+
+        function deleteData(index)
+        {
+            alldata.splice(index,1)
+            showdata()
+        }
+
+    </script>
+    
+</body>
+</html>

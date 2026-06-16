@@ -21,12 +21,9 @@
 
         let step = 0;
 
-        function load(){
-            document.getElementsByClassName('slider')[0]
-            .style.backgroundImage=`url(${pic[0]})`
-        }
-        
+                
         function next (){
+            
         let slider = document.getElementsByClassName('slider');
         step++;
 
@@ -37,6 +34,8 @@
 
         for(let i = 0;i<pic.length;i++)
         {
+            // console.log(pic[i]);
+            
             if(i == step)
             {
 
@@ -58,16 +57,14 @@
                 slider[0].style.backgroundImage = `url(${pic[i]})`;
            }
        }
-
-
-    }
-
-      
+    }     
         
     </script> 
-    <body onload="load()"> 
+
+    <body> 
             
     <div class="slider">
+        
         <div class="lclick" onclick="prev()"><i class="fa-solid fa-angle-left"></i></div>
         <div class="rclick" onclick="next()"><i class="fa-solid fa-angle-right"></i></div>
     </div>    

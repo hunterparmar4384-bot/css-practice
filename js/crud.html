@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATION</title>
+</head>
+<body>
+
+    <!-- NAME = <input type="text" name="" id="name">
+    <p id="name-error" style="color: blueviolet;"> </p>
+    <br>
+
+    SURNAME = <input type ="text" name="" id="surname">
+    <p id="surname-error" style="color: blueviolet;"></p>
+    <br>
+    <button onclick="createdata()" style="cursor: pointer;">SUBMIT</button>
+     -->
+    
+     SURNAME:<input type="text" name="" id="surname">
+     <p id="surname-error" style="color: blueviolet;"></p>
+     <br>     
+     NAME:<input type="text" name="" id="name">
+     <p id="name-error" style="color: blueviolet;"></p>
+     <br>
+     <button onclick="createdata()">click now</button>
+
+
+    <script>
+
+        let alldata = []
+        function createdata()
+        {
+             const surname = document.getElementById('surname').value
+            console.log(surname)
+            const name = document.getElementById('name').value
+            console.log(name)
+            const obj ={surname,name}
+            console.log(obj)
+
+            if(!surname)
+            {
+                document.getElementById('surname-error').innerText='Enter surname'
+                
+            }
+            else
+            {
+                document.getElementById('surname-error').innerText=''
+            }
+            if(!name)
+            {
+                document.getElementById('name-error').innerText='Enter name'
+            }
+            else
+            {
+                document.getElementById('name-error').innerText=''
+            }
+            
+            if(name && surname)
+            {
+                alldata.push(obj)
+                DataView()
+                document.getElementById('name').value=''
+                document.getElementById('surname').value=''
+            }           
+        }
+
+        function DataView()
+        {
+            console.log(alldata)
+        }
+
+        // let alldata = []
+
+        // function createdata()
+        // {
+        //     const name = document.getElementById('name').value 
+        //     console.log(name)
+        //     const surname = document.getElementById('surname').value
+        //     console.log(surname)
+
+        //     const obj = {name,surname}
+        //     console.log(obj)
+
+        //     if(!name)
+        //     {
+        //         document.getElementById('name-error').innerText='Enter name'                
+        //     }
+        //     else
+        //     {
+        //         document.getElementById('name-error').innerText = ''
+        //     }
+        //     if(!surname)
+        //     {
+        //         document.getElementById('surname-error').innerText='Enter surname'
+        //     }
+        //     else
+        //     {
+        //         document.getElementById('surname-error').innerText=''
+        //     }
+
+        //     if(name && surname)
+        //     {
+        //         alldata.push(obj)
+        //         dataview()
+        //         document.getElementById('name').value =''
+        //         document.getElementById('surname').value=''
+        //     }
+        // }
+        // function dataview()
+        // {
+        //     console.log(alldata)
+        // }
+        
+    </script>
+        
+</body>
+</html>

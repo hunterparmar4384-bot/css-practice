@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/js/calculetar.css">
+    <title>CALCULATER</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="screen" id="screen"></div>
+
+        <div class="box2">
+            <div class="contain" id="add" onclick="add()">+</div>
+            <div class="contain" id="sub" onclick="sub()">-</div>
+            <div class="contain" id="multi" onclick=" multi()">*</div>
+            <div class="contain" id="divide" onclick="divide()">/</div>
+
+            <div class="contain">7</div>
+            <div class="contain">8</div>
+            <div class="contain">9</div>
+            <div class="contain marg" onclick="result()">=</div>
+            
+            
+            <div class="contain">4</div>
+            <div class="contain">5</div>
+            <div class="contain">6</div>
+            
+            <div class="contain">1</div>
+            <div class="contain">2</div>
+            <div class="contain">3</div>
+            
+            <div class="contain">0</div>
+            <div class="contain">.</div>
+            <div class="contain" onclick="restart()">AC</div>
+            
+        </div>
+    </div>
+    <script>
+
+        let screen = document.getElementById("screen");
+        let buttons = document.querySelectorAll(".contain");
+
+        // buttons.forEach(function(btn){
+        //     btn.addEventListener("click",function(){
+        //         let value = btn.innerHTML;
+        //         screen.innerText += value;
+        //     });
+        // });
+
+        buttons.forEach(function(btn){
+            btn.addEventListener("click",function(){
+
+                 let value = btn.innerText;
+
+                if( value != "+" && 
+                    value != "-" &&
+                    value != "*" &&
+                    value != "/" &&
+                    value != "=" &&
+                    value != "AC"
+                )
+                {
+                    screen.innerText += value;
+                }
+            })
+        })
+
+        let num1 = 0;
+        let num2 = 0;
+        let clc = "";
+
+        function add()
+        {
+            num1 = Number(screen.innerText);
+            clc = "+";
+            screen.innerText+="+";
+        }
+        
+        function sub()
+        {
+            num1 = Number(screen.innerText);
+            clc = "-";
+            screen.innerText+="-";
+        }
+
+        function multi()
+        {
+            num1 = Number(screen.innerText);
+            clc = "*";
+            screen.innerText+="*";
+        }
+
+        function divide()
+        {
+            num1 = Number(screen.innerText);
+            clc = "/";
+            screen.innerText+="/";
+        }
+
+        function result()
+        {
+            num2 = Number(screen.innerText);
+            if(clc == "+")
+            {
+                screen.innerText = num1 + num2;                                
+            }
+            else if(clc == "-")
+            {
+                screen.innerText = num1 - num2;
+            }
+            else if (clc == '*')
+            {
+                screen.innerText = num1 * num2;
+            }
+            else if (clc == "/")
+            {
+                screen.innerText = num1 / num2;
+            }             
+
+        }
+
+        function restart()
+        {
+            screen.innerText="";
+        }
+
+
+        
+
+    </script>
+    
+</body>
+</html>

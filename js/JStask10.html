@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="/js/JStask10.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="caclu">
+        <div class="box1">
+            <input type="text"  id="num1" placeholder="value1">            
+        </div>
+
+        <div class="box2">
+           <select class="box2" id="change">
+                <option></option>   
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>        
+        </div>
+
+        <div class="box3">
+            <input type="text" id="num2" placeholder="value2">
+        </div>
+
+        <div class="box4" id="result"></div>
+
+        <div class="box5">
+        <button class="btn1" onclick="count()"><i class="fa-solid fa-equals"></i></button>
+        <button class="btn2" onclick="restart()"><i class="fa-solid fa-repeat"></i></button>
+  
+        </div>    
+
+    </div>
+
+    <script>
+        function count()
+        {
+           let n1 = Number(document.getElementById('num1').value);
+           let n2 = Number(document.getElementById('num2').value);
+           let clc = document.getElementById('change').value;
+
+           let ans;
+           if(clc == '+')
+           {
+                ans = n1 + n2;
+           }
+           else if(clc == '-')
+           { 
+                ans = n1 - n2;
+           }
+           else if(clc == '*')
+           {
+                ans = n1 * n2;
+           }
+           else if(clc == '/')
+           {
+                ans = n1 / n2;
+           }
+
+           document.getElementById("result").innerHTML = ans;
+        }
+
+        function restart()
+        {
+            document.getElementById('num1').value="";
+            document.getElementById('num2').value="";
+            document.getElementById('change').selectedIndex = 0;
+            document.getElementById('result').innerHTML ="";
+        }
+    </script>
+
+
+    <!-- <div class="main">
+        <div class="box1"></div>
+        <div class="box2">
+            <div class="contain">+</div>
+            <div class="contain">-</div>
+            <div class="contain">*</div>
+            <div class="contain">/</div>
+
+            <div class="contain">7</div>
+            <div class="contain">8</div>
+            <div class="contain">9</div>
+            <div class="contain marg">=</div>
+            
+            
+            <div class="contain">4</div>
+            <div class="contain">5</div>
+            <div class="contain">6</div>
+            
+            <div class="contain">1</div>
+            <div class="contain">2</div>
+            <div class="contain">3</div>
+            
+            <div class="contain">0</div>
+            <div class="contain">.</div>
+            <div class="contain">AC</div>
+            
+        </div>
+    </div>   -->   
+    
+</body>
+</html>

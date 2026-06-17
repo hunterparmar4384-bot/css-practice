@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD format</title>
+    <script>
+       let alldata = []
+       let editid = null
+
+
+    function createdata()
+    {
+        const name = document.getElementById('name').value
+        console.log(name)
+        const surname = document.getElementById('surname').value
+        console.log(surname)
+        const obj = {name,surname}
+        console.log(obj)
+
+        if(!name)
+        {
+                    document.getElementById('name-error').innerText='ENTER YOUR NAME'    
+        }
+        else
+        {
+                    document.getElementById('name-error').innerText=''
+        }
+        
+        if(!surname)
+        {
+                   document.getElementById('surname-error').innerText='ENTER YOUR SURNAME'
+        }
+        else
+        {
+                  document.getElementById('surname-error').innerText=''
+
+        }
+
+        if(editid!=null)
+        {
+            alldata[editid] = obj
+            editid = null
+        }
+        else
+        {
+            alldata.push(obj)
+        }
+        datashow()
+        document.getElementById('name').value = ''
+        document.getElementById('surname').value = ''
+    }
+
+
+    function datashow()
+    {
+        console.log(alldata)
+        let print = ''
+        alldata.map((i,index)=>{
+            print += `<tr>
+                      <td>${i.name}</td>
+                      <td>${i.surname}</td>
+                      <td><button onclick="deletedata(${index})">DELETE</button></td>
+                      <td><button onclick="editdata(${index})">UPDATE</button></td>
+
+                      </tr>`
+        })
+        document.getElementById('datashow').innerHTML = print
+    }
+    function deletedata(index)
+    {
+        alldata.splice(index,1)
+        datashow()
+    }
+
+    function editdata(index)
+    {
+        let editrecord = alldata[index]
+        document.getElementById('name').value = editrecord.name
+        document.getElementById('surname').value = editrecord.surname
+
+        editid = index
+
+    }
+
+</script>
+</head>
+<body>
+
+NAME:<input type="text" name="" id="name">
+<p id="name-error" style="color: red;"></p>
+<br>
+SURNAME:<input type="text" name="" id="surname">
+<p id="surname-error" style="color: red;"></p>
+<br>
+<button onclick="createdata()">SUBMIT</button>  
+<br><br>
+
+<table border="2">
+    <tr>
+        <td>NAME</td>
+        <td>SURNAME</td>
+        <td>DELETE</td>
+        <td>EDIT</td>
+    </tr>
+
+    <tbody id="datashow"></tbody>
+</table>
+
+</body>
+</html>

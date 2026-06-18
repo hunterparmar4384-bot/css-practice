@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API task 1</title>
+    <script>
+        alldata = []
+
+        async function mydata(){
+            let  demo = await fetch('https://jsonplaceholder.typicode.com/comments')
+            alldata = await demo.json()
+            showdata()
+        }
+
+        function showdata(){
+            let print = ''
+            alldata.map((i,index)=>{
+                print +=`<tr>
+                         <td>${i.postId}</td>
+                         <td>${i.id}</td>
+                         <td>${i.name}</td>
+                         <td>${i.email}</td>
+                         <td>${i.body}</td>
+                         </tr>`
+            })
+            document.getElementById('show').innerHTML = print
+        }
+        mydata()
+
+        
+
+    </script>
+</head>
+<body>
+        <table border="2">
+            <tr>
+                <td>POST ID</td>
+                <td>ID</td>
+                <td>NAME</td>
+                <td>EMAIL</td>
+                <td>BODY</td>
+            </tr>
+            <tbody id="show"></tbody>
+        </table>
+</body>
+</html>

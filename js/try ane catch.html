@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error handling</title>
+</head>
+<body>
+    <script>
+        /*let a = 20;
+        try
+        {
+            document.write(a);
+        }
+        catch(error){
+            document.write("Error Occurred")
+        }*/
+
+       /* try{
+            let x = 10;
+            let y = 20;
+
+            document.write("X=>",x,"<br>")
+            document.write("Y=>",y,"<br>")
+            document.write("Total=>",x + y);
+        }
+        catch(error)
+        {
+            document.write("Error")
+        }   */
+
+       /* try{
+            // let a = 10
+            document.write(a)
+        }
+        catch(error)
+        {
+            document.write(error)
+        }       */
+
+        // let mark = 3
+
+        //                                       aa code thi pota ni error jate create kari sakay che 
+
+       /* try
+        {
+            if (mark<33)
+            {
+                // throw new Error("fail");
+                throw "fail"
+                
+            }
+
+            document.write("pass")
+        }
+        catch(error)
+        {
+            document.write(error)
+        }    */
+
+       /* function cheackage(age)
+        {
+            try {
+                if(age<18)
+                 {
+                    throw new Error("AGE must be 18 or above");
+                                         
+                 }
+                 document.write("eligible")                
+            }
+
+            catch(error)
+            {
+                document.write(error)
+            }
+        }
+        cheackage(14) */
+
+        function divide(a,b)
+        {
+            try{
+                if(b == 0)
+            {
+                throw new Error("not divide by zero");
+                
+            }
+            document.write(a / b)
+
+            
+            }
+            catch(error)
+            {
+                document.write(error.message)
+            }
+
+        }
+        divide(10,0)
+        
+
+</script>
+    
+</body>
+</html>

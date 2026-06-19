@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API TASK3</title>
+</head>
+<body>
+    <table border="1">
+        <tr>     
+            <td>ALBUM ID</td>
+            <td>ID</td>
+            <td>TITLE</td>
+            <td>URL</td>
+            <td>THUMBBAILURL</td>
+        </tr>
+        <tbody id="shownow"></tbody>
+    </table>
+
+    <script>
+        alldata = []
+
+        async function mydata()
+        {
+            let task = await fetch('https://jsonplaceholder.typicode.com/photos')
+            alldata = await task.json()
+            createdata()
+        }
+
+        function createdata()
+        {
+            let pritn = ''
+            alldata.map((i,index)=>{
+                print += `<tr>
+                          <td>${i.albumId}</td>
+                          <td>${i.id}</td>
+                          <td>${i.title}</td>
+                          <td>${i.url}</td>
+                          <td>${i.thumbnailUrl}</td>
+                          </tr>`
+            })
+            document.getElementById('shownow').innerHTML = print
+        }
+        mydata()
+
+    </script>
+</body>
+</.html>

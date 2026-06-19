@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer function</title>
+</head>
+<body>
+
+    <!-- <button onclick="demo()">click</button>
+    <p id="msg">hello and wel come to java script</p> -->
+     <!-- <p id="demo" style="font-size: 30px;"></p> -->
+   
+    <button onclick="starttimer()">start</button>
+    <button onclick="stoptimer()">stop</button>
+    <p id="demo" style="font-size: 40px;"></p>
+    
+
+
+    <script>
+
+//               clearinterval
+
+let timer
+let count = 0;
+
+function starttimer() {
+      timer =  setInterval(function () {
+        count ++;
+         document.getElementById("demo").innerText = count;
+    }, 1000);                
+}
+
+ function stoptimer(){
+     clearInterval(timer)
+ }
+
+
+
+
+
+
+
+
+//                           setinterval
+
+       /* let count = 1;
+
+        let timer = setInterval (function () {
+            document.write(count)
+            count++
+
+            if(count > 5)
+        {
+            clearInterval(timer)
+        }
+        },1000)*/
+
+      /* 
+        setInterval (function () {
+             let d = new Date()
+            document.write(d.toLocaleTimeString())
+        },1000)   */
+
+        /*let count = 0;
+        setInterval(function() {
+            count++;
+            document.getElementById("demo").innerHTML =  count;
+        }, 1000)  */
+
+      /*  let a = 1
+        setInterval(function () {
+            document.write(a)
+            a++;
+        },1000)*/
+
+/*        setInterval(function (){
+        document.write("hello javascript","<br>");
+        }, 1000); */
+
+
+       
+        //               settimeout
+
+
+   /*     setTimeout(function(){
+            document.write("hello java");
+        }, 1000);
+    */ 
+   
+    /*setTimeout(function(){
+        alert("welcome");      
+    }, 2000); */
+
+    /*function show()
+    {
+        setTimeout(function show(){
+            alert("hello and welcome to java script classes");
+            // document.getElementById('showdata').innerText='hello and wel come to java script classes'
+        }, 1000);
+    }*/
+  
+   /* function demo(){
+    setTimeout( function demo()  {
+    document.getElementById("msg").style.display = "none";
+}, 1000);
+}*/
+
+</script>    
+</body>
+</html>

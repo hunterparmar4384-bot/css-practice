@@ -1,0 +1,27 @@
+
+.footer{
+    background-color: #06080f;
+    color: #ffffff;
+    padding: 24px  12px ;
+}
+.coler{
+    color: #7BB100;    
+ }
+
+.font{
+    height: 36px;
+    /* width: 36px; */
+    font-size: 18px;
+    padding: 0px 8px;
+    border: none;
+    background-color: #222330;
+    color: #7BB100;
+    font-weight: bold;
+   
+} 
+.font:hover{
+    background-color: #7BB100;
+   
+    color: white;
+    transition: 0.3s;
+}

@@ -26,9 +26,8 @@ function Header() {
                   <Link  href='/Contact' underline='none' className='text'>Contact</Link> 
                 </Nav>
               </Navbar.Collapse>
-
-               <Col xs="auto">
-            <Button  className='rounded-pill background'>Get started</Button>
+         <Col xs="auto">
+            <Button className='rounded-pill background button'>Get started</Button>
           </Col>
 
              

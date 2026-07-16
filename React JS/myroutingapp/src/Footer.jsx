@@ -16,21 +16,18 @@ function Footer() {
        <Row>
         <Col className='sm = {6} xs={3}'>© Copyright Workfolio All Rights Reserved  <br />Designed by<span className='coler'> BootstrapMade</span></Col>
         <Col className='d-flex gap-2 justify-content-end  sm = {6} xs={3}'  >
-       <button className='font d-flex justify-content-center  align-items-center ' ><a href='https://x.com/' target='blank' style={{color: "#7BB100"}}> <FaXTwitter /></a> </button>
+       <button className='font d-flex justify-content-center  align-items-center ' ><a href='http://localhost:3000/'  style={{color: "#7BB100"}}> <FaXTwitter /></a> </button>
 
-       <button className='font d-flex justify-content-center  align-items-center'><a href='https://www.facebook.com/' target='blank' style={{color: "#7BB100"}}>  <FaFacebook /></a></button>
+       <button className='font d-flex justify-content-center  align-items-center'><a href='http://localhost:3000/'  style={{color: "#7BB100"}}>  <FaFacebook /></a></button>
 
-       <button className='font d-flex justify-content-center  align-items-center '><a href='http://instagram.com/?hl=en' target='blank' style={{color: "#7BB100"}}> <FaInstagram /></a> </button>
+       <button className='font d-flex justify-content-center  align-items-center '><a href='http://localhost:3000/'  style={{color: "#7BB100"}}> <FaInstagram /></a> </button>
 
-        <button className='font d-flex justify-content-center  align-items-center '><a href='https://in.linkedin.com/' target='blank' style={{color: "#7BB100"}}>  <FaLinkedinIn /></a> </button>
-           
+        <button className='font d-flex justify-content-center  align-items-center '><a href='http://localhost:3000/' style={{color: "#7BB100"}}>  <FaLinkedinIn /></a> </button>           
            
         </Col>
       </Row>      
     </Container>
-    </Container>
-
-    
+    </Container>   
     
     </>
      

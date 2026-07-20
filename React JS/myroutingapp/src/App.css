@@ -272,6 +272,37 @@
         padding: 6px 12px !important;
     }
 }
+.my-card {
+  border: none !important;
+  border-bottom: 1px solid rgb(66, 64, 64) !important;  
+}
+.my-card {
+  overflow: hidden;
+}
+.card-img {
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+.card-img:hover {
+  transform: scale(1.1);
+}
+.spn{
+    width: 32.28px;
+    height: 31.5px;
+    font-size: 13px;
+    font-family: "Roboto", system-ui, -apple-system !important;
+    border: 1px solid rgb(38, 53, 3);
+    padding: 5px 14px;
+    margin-right: 10px;
+    border-radius: 25px;
+    color:  color-mix(in srgb, #e5e6ea, transparent 40%);
+}
+.spn:hover{
+    color: #7BB100;
+    transition: 0.3s;
+}
+
+
 
 
 

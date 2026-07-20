@@ -105,7 +105,7 @@ function Services() {
 
         <Col lg={4} md={6} xs={12} className="mb-4 d-flex justify-content-center"> 
           <Card className='me-3 ' style={{ width: '350px', background:'#0e1022',borderBottom:'1px solid' }} md={4} >            
-           <Card.Body className="d-flex">
+           <Card.Body className="d-flex " style={{backgroundColor:'none'}}>
                <div className="me-3 line"><h6>06</h6></div>
                <div>
                     <Card.Title className='family' style={{fontSize:'24px', color:'#EEEFF7'}}> 

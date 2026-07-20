@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { GoArrowRight } from "react-icons/go";
 
 function Portfolio() {
   return (
@@ -31,15 +32,22 @@ function Portfolio() {
        <Container className='mt-5'>
 
         <Col lg={6} xs={12}>
-          <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                   <Card.Title>Card Title</Card.Title>
-                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+          <Card style={{width:'546px'}}  className="my-card ">
+              <Card.Img  className="card-img" variant="top"
+               src="https://bootstrapmade.com/content/demo/Rival/assets/img/portfolio/portfolio-3.webp"
+                />
+              <Card.Body style={{backgroundColor:'#0e1022'}}>
+                
+                   <Card.Title style={{fontSize:'24px', color:'#EEEFF7'}} className='family mt-4'>Digital Innovation Platform</Card.Title>
+                   <Card.Text className='line'>
+                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi cras ultricies ligula.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                 <span className='spn'>React</span>
+                 <span className='spn'>Node.js</span>
+                 <span className='spn'>AWS</span>
+                 <br />
+                 <br />
+                 <span className='hfour'>View project <GoArrowRight className="logo" /></span>
               </Card.Body>
            </Card>        
         </Col>

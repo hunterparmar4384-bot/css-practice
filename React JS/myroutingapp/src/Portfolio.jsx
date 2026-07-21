@@ -29,9 +29,10 @@ function Portfolio() {
           </Row>
        </Container>
 
-       <Container className='mt-5'>
+       <Container className='mt-5' >
+        <Row>
 
-        <Col lg={6} xs={12}>
+        <Col xl={6} lg={6} md={12} className="mb-4">
           <Card style={{width:'546px'}}  className="my-card ">
               <Card.Img  className="card-img" variant="top"
                src="https://bootstrapmade.com/content/demo/Rival/assets/img/portfolio/portfolio-3.webp"
@@ -52,7 +53,128 @@ function Portfolio() {
            </Card>        
         </Col>
 
-       </Container>
+        <Col xl={6} lg={6} md={12} className="mb-4">
+          <Card style={{width:'546px'}}  className="my-card ">
+              <Card.Img  className="card-img" variant="top"
+               src="https://bootstrapmade.com/content/demo/Rival/assets/img/portfolio/portfolio-5.webp"
+                />
+              <Card.Body style={{backgroundColor:'#0e1022'}}>
+                
+                   <Card.Title style={{fontSize:'24px', color:'#EEEFF7'}} className='family mt-4'>Intelligent Task Manager</Card.Title>
+                   <Card.Text className='line'>
+                     Nulla porttitor accumsan tincidunt donec rutrum congue leo eget malesuada vivamus suscipit.
+                  </Card.Text>
+                 <span className='spn'>Flutter</span>
+                 <span className='spn'>Firebase</span>
+                 <span className='spn'>AI</span>
+                 <br />
+                 <br />
+                 <span className='hfour'>View project <GoArrowRight className="logo" /></span>
+              </Card.Body>
+           </Card>        
+        </Col>
+
+         <Col xl={6} lg={6} md={12} className="mb-4">
+          <Card style={{width:'546px'}}  className="my-card ">
+              <Card.Img  className="card-img" variant="top"
+               src="https://bootstrapmade.com/content/demo/Rival/assets/img/portfolio/portfolio-1.webp"
+                />
+              <Card.Body style={{backgroundColor:'#0e1022'}}>
+                
+                   <Card.Title style={{fontSize:'24px', color:'#EEEFF7'}} className='family mt-4'>Contemporary Visual Identity</Card.Title>
+                   <Card.Text className='line'>
+                      Quisque velit nisi pretium ut lacinia in elementum id enim sed porttitor lectus nibh.
+                  </Card.Text>
+                 <span className='spn'>Illustrator</span>
+                 <span className='spn'>Figma</span>
+                 <span className='spn'>Brand</span>
+                 <br />
+                 <br />
+                 <span className='hfour'>View project <GoArrowRight className="logo" /></span>
+              </Card.Body>
+           </Card>        
+        </Col>
+
+        <Col xl={6} lg={6} md={12} className="mb-4">
+          <Card style={{width:'546px'}}  className="my-card ">
+              <Card.Img  className="card-img" variant="top"
+               src="https://bootstrapmade.com/content/demo/Rival/assets/img/portfolio/portfolio-6.webp"
+                />
+              <Card.Body style={{backgroundColor:'#0e1022'}}>
+                
+                   <Card.Title style={{fontSize:'24px', color:'#EEEFF7'}} className='family mt-4'>Analytics Dashboard Interface</Card.Title>
+                   <Card.Text className='line'>
+                      Vivamus magna justo lacinia eget consectetur sed convallis at tellus curabitur non nulla.
+                  </Card.Text>
+                 <span className='spn'>Figma</span>
+                 <span className='spn'>Prototyping</span>
+                 <span className='spn'>UX</span>
+                 <br />
+                 <br />
+                 <span className='hfour'>View project <GoArrowRight className="logo" /></span>
+              </Card.Body>
+           </Card>        
+        </Col>
+
+        <Col xl={6} lg={6} md={12} className="mb-4">
+          <Card style={{width:'546px'}}  className="my-card ">
+              <Card.Img  className="card-img" variant="top"
+               src="https://bootstrapmade.com/content/demo/Rival/assets/img/portfolio/portfolio-2.webp"
+                />
+              <Card.Body style={{backgroundColor:'#0e1022'}}>
+                
+                   <Card.Title style={{fontSize:'24px', color:'#EEEFF7'}} className='family mt-4'>Online Retail Experience</Card.Title>
+                   <Card.Text className='line'>
+                       Donec sollicitudin molestie malesuada sed porttitor lectus nibh nulla quis lorem ut libero.
+                  </Card.Text>
+                 <span className='spn'>Shopify</span>
+                 <span className='spn'>React</span>
+                 <span className='spn'>API</span>
+                 <br />
+                 <br />
+                 <span className='hfour'>View project <GoArrowRight className="logo" /></span>
+              </Card.Body>
+           </Card>        
+        </Col>
+
+         <Col xl={6} lg={6} md={12} className="mb-4">
+          <Card style={{width:'546px'}}  className="my-card ">
+              <Card.Img  className="card-img" variant="top"
+               src="https://bootstrapmade.com/content/demo/Rival/assets/img/portfolio/portfolio-4.webp"
+                />
+              <Card.Body style={{backgroundColor:'#0e1022'}}>
+                
+                   <Card.Title style={{fontSize:'24px', color:'#EEEFF7'}} className='family mt-4'>Banking App Reimagined</Card.Title>
+                   <Card.Text className='line'>
+                      Curabitur aliquet quam id dui posuere blandit nulla quis lorem ut libero malesuada feugiat.
+                  </Card.Text>
+                 <span className='spn'>Shopify</span>
+                 <span className='spn'>React</span>
+                 <span className='spn'>API</span>
+                 <br />
+                 <br />
+                 <span className='hfour'>View project <GoArrowRight className="logo" /></span>
+              </Card.Body>
+           </Card>        
+        </Col>
+      </Row>        
+   </Container>
+
+
+
+   <Container style={{marginTop:'50px'}}>
+        <Row>
+           <Col style={{borderTop:'1px solid',paddingTop:'50px'}} lg={6} md={12}>
+           <h3 className='family' style={{color:'#EEEFF7'}}>Have a project in mind?</h3>
+           <p  className='line'>Let's collaborate and craft something remarkable together.</p>
+           </Col>
+           <Col style={{paddingTop:'50px'}} lg={6} md={12} className="text-lg-end text-start " >            
+                <Button className='rounded-pill  b me-4' size="lg">Begin a conversation</Button>
+                  <span className='hfour'>Explore All work <GoArrowRight className="logo" /></span>
+                 
+           </Col>
+      </Row>
+     </Container>      
       
     </div>
   )

@@ -13,8 +13,8 @@ import Home from './Home';
 import About from './About';
 import Services from './Services';
 import Portfolio from './Portfolio'
-import Team from './Team'
-import Contact from './Contact';
+import WhyUs from './Why-Us'
+import Testimonials from './Testimonials';
 
 
 
@@ -24,11 +24,11 @@ function App() {
       <Router>
         <Header></Header>
           <Switch>    
-             <Route path="/contact">
-               <Contact />
+             <Route path="/Testimonials">
+               <Testimonials />
              </Route>        
-             <Route path="/team">
-               <Team />
+             <Route path="/Why-Us">
+               <WhyUs />
              </Route>        
              <Route path="/portfolio">
                <Portfolio />

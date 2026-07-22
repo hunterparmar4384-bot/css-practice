@@ -301,6 +301,17 @@
     color: #7BB100;
     transition: 0.3s;
 }
+.why{
+       transition: all 0.8s ease;
+      cursor: pointer;
+}
+.why:hover{
+     transform: scale(0.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
 
 
 

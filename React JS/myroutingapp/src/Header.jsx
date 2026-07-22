@@ -22,8 +22,8 @@ function Header() {
                   <Link href='/About' underline='none' className='text'>About</Link>
                   <Link href='/Services' underline='none' className='text'>Services</Link> 
                   <Link href='/Portfolio' underline='none' className='text'>Portfolio</Link> 
-                  <Link  href='/Team' underline='none' className='text'>Team</Link> 
-                  <Link  href='/Contact' underline='none' className='text'>Contact</Link> 
+                  <Link  href='/Why-Us' underline='none' className='text'>Why Us</Link> 
+                  <Link  href='/Testimonials' underline='none' className='text'>Testimonials</Link> 
                 </Nav>
               </Navbar.Collapse>
          <Col xs="auto">
